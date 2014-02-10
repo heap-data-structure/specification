@@ -1,6 +1,6 @@
 
 
-var merge_t = function(search, copy)
+var merge_t = function(search, copy){
 
 	var merge = function(a, i, j, b, k, l, c, m, n){
 
