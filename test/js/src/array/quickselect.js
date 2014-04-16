@@ -1,7 +1,7 @@
 var util = require('util');
 
 var check = function(ctor, n, pred) {
-	test(util.format("quicksort (new %s(%d), %s)", ctor.name, n, pred), function (assert) {
+	test(util.format("quickselect (new %s(%d), %s)", ctor.name, n, pred), function (assert) {
 
 		// SETUP RANDOM
 		var randint = neat.randint;
@@ -12,29 +12,30 @@ var check = function(ctor, n, pred) {
 		// SETUP SORT
 		var partition = neat.partition_t(pred);
 		var quicksort = neat.quicksort_t(partition);
+		var quickselect = neat.quickselect_t(partition);
 
-		// SETUP ARRAY
-		var a = new ctor(n);
-		iota(a, 0, n, 0);
+		// SETUP REF ARRAY
+		var ref = new ctor(n);
+		iota(ref, 0, n, 0);
+		shuffle(ref, 0, n);
+		quicksort(ref, 0, n);
+
+		// SETUP TEST ARRAY
+		var a = ref.slice();
 
 		// SORT ARRAY
 		shuffle(a, 0, n);
-		quicksort(a, 0, n);
+		quickselect(a, 0, n);
 
 		// TEST PREDICATE
 		var i = a.length;
-		var sorted = true;
-		if(i > 1){
-			while (--i) {
-				if ( !pred(a[i-1], a[i]) ) {
-					sorted = false;
-					break;
-				}
-			}
+		while (i--) {
+			shuffle(a, 0, n);
+			quickselect(i, a, 0, n);
+			deepEqual(a[i], ref[i], 'select #' + i);
 		}
 
-		ok(sorted, 'check sorted');
-		deepEqual(a.length, n, 'check length a');
+		deepEqual(a.length, n, 'check length');
 	});
 };
 
@@ -45,7 +46,7 @@ var PRED = [
 	function(a, b){ return a >= b; }
 ];
 
-var N = [0, 1, 2, 10, 100, 1000, 10000];
+var N = [0, 1, 2, 10, 100, 256];
 
 var CTOR = [
 	Array,
