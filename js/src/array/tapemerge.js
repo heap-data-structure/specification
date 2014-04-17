@@ -2,7 +2,8 @@
 
 var tapemerge_t = function(pred){
 
-	var tapemerge = function(a, i, j, b, k, l, c, m, n){
+	var tapemerge = function(a, i, j, b, k, l, c, m){
+		var n = m + j - i + l - k;
 
 		for(; m < n; ++m){
 			if(k >= l || (i < j && pred(a[i], b[k]))){
