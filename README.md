@@ -1,4 +1,4 @@
-neat
+[neat](http://aureooms.github.io/neat)
 ====
 
 [![Build Status](https://drone.io/github.com/aureooms/neat/status.png)](https://drone.io/github.com/aureooms/neat/latest)
