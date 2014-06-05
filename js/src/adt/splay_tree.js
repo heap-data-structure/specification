@@ -9,8 +9,7 @@ var splay_tree_t = function(diff){
 	var zagzig = function(x, p, g){ zag(x, g); zig(x, p); };
 	var zagzag = function(x, p, g){ zag(p, g); zag(x, p); };
 
-	var z  = [zig, zag];
-	var zz = [[zigzig, zigzag], [zagzig, zagzag]];
+	var z  = [zig, zag], zz = [[zigzig, zigzag], [zagzig, zagzag]];
 
 	var insert = function(pt, v){
 		var w = diff(v, pt[2]) > 0 | 0;
