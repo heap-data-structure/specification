@@ -17,17 +17,6 @@ playground for algorithmic code bricks in JavaScript
 
 
 
-other projects implementing algorithms :
-
-  - https://github.com/xtaci/algorithms
-  - https://github.com/nryoung/algorithms
-  - https://github.com/kanwei/algorithms
-  - https://github.com/felipernb/algorithms.js
-  - https://github.com/phishman3579/java-algorithms-implementation
-  - https://github.com/patmorin/ods
-  - http://rosettacode.org
-
-
 this project is just a playground for any algorithm / procedure, data structure that doesn't fit in any of those project
 
   - [js-array](https://github.com/aureooms/js-array)
@@ -63,6 +52,21 @@ Binary and Binomial heap reference:
 
   - http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf
   - http://stackoverflow.com/questions/6531543/efficient-implementation-of-binary-heaps
+
+
+Other projects implementing algorithms in JavaScript :
+
+  - https://github.com/felipernb/algorithms.js
+  - https://github.com/mgechev/javascript-algorithms
+
+Other projects implementing algorithms in other languages :
+
+  - https://github.com/xtaci/algorithms (C++)
+  - https://github.com/nryoung/algorithms (Python)
+  - https://github.com/kanwei/algorithms (Ruby)
+  - https://github.com/phishman3579/java-algorithms-implementation (Java)
+  - https://github.com/patmorin/ods (C++, Java, Python)
+  - http://rosettacode.org (All kinds of languages)
 
 Other reference:
 
