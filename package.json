@@ -3,7 +3,7 @@
 	"description": "Heap specification code bricks for JavaScript",
 	"homepage": "http://aureooms.github.io/js-heap-spec/",
 	"main": "js/dist/heap-spec.js",
-	"version": "6.0.1",
+	"version": "7.0.0",
 	"repository": {
 		"url": "https://github.com/aureooms/js-heap-spec.git",
 		"type": "git"
