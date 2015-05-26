@@ -1,10 +1,10 @@
 {
-	"name": "heap",
+	"name": "heap-spec",
 	"code": {
 		"main": [
 			"js",
 			"dist",
-			"heap.js"
+			"heap-spec.js"
 		],
 		"test": [
 			"test",

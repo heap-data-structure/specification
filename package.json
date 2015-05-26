@@ -1,11 +1,11 @@
 {
-	"name": "aureooms-js-heap",
-	"description": "Heap code bricks for JavaScript",
-	"homepage": "http://aureooms.github.io/js-heap/",
-	"main": "js/dist/heap.js",
+	"name": "aureooms-js-heap-spec",
+	"description": "Heap specification code bricks for JavaScript",
+	"homepage": "http://aureooms.github.io/js-heap-spec/",
+	"main": "js/dist/heap-spec.js",
 	"version": "6.0.1",
 	"repository": {
-		"url": "https://github.com/aureooms/js-heap.git",
+		"url": "https://github.com/aureooms/js-heap-spec.git",
 		"type": "git"
 	},
 	"keywords": [
@@ -13,7 +13,8 @@
 		"ender",
 		"heap",
 		"javascript",
-		"js"
+		"js",
+		"spec"
 	],
 	"scripts": {
 		"build": "./node_modules/.bin/aureooms-node-package-build",
@@ -32,7 +33,7 @@
 		"aureooms-node-package": "^2.0.2"
 	},
 	"bugs": {
-		"url": "https://github.com/aureooms/js-heap/issues"
+		"url": "https://github.com/aureooms/js-heap-spec/issues"
 	},
 	"dependencies": {},
 	"license": "AGPL-3.0"

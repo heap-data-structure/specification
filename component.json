@@ -1,11 +1,11 @@
 {
-	"name": "aureooms-js-heap",
-	"repo": "aureooms/js-heap",
+	"name": "aureooms-js-heap-spec",
+	"repo": "aureooms/js-heap-spec",
 	"scripts": [
-		"js/dist/heap.js"
+		"js/dist/heap-spec.js"
 	],
 	"version": "6.0.1",
-	"description": "Heap code bricks for JavaScript",
-	"main": "js/dist/heap.js",
+	"description": "Heap specification code bricks for JavaScript",
+	"main": "js/dist/heap-spec.js",
 	"license": "AGPL-3.0"
 }
