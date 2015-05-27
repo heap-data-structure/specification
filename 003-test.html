@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><title>003-test</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="003-test"><meta name="groc-project-path" content="js/src/003-test.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-heap-spec"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-heap-spec/blob/master/js/src/003-test.js">js/src/003-test.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper">exports.test = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> heaps , references </span>) </span>{
+
+	exports.head( heaps ) ;
+	exports.pushpop( heaps ) ;
+	exports.merge( heaps ) ;
+
+	<span class="hljs-keyword">if</span> ( !references ) <span class="hljs-keyword">return</span> ;
+
+	exports.update( heaps ) ;
+	exports.decreasekey( heaps ) ;
+	exports.increasekey( heaps ) ;
+	exports.del( heaps ) ;
+	exports.headreference( heaps ) ;
+	exports.popreference( heaps ) ;
+	exports.pushreference( heaps ) ;
+
+} ;</div></div></div></div></body></html>

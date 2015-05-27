@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><title>001-adt/DummyHeap</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../"><meta name="groc-document-path" content="001-adt/DummyHeap"><meta name="groc-project-path" content="js/src/001-adt/DummyHeap.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-heap-spec"><link rel="stylesheet" type="text/css" media="all" href="../assets/style.css"><script type="text/javascript" src="../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-heap-spec/blob/master/js/src/001-adt/DummyHeap.js">js/src/001-adt/DummyHeap.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">var</span> DummyHeap = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> compare </span>) </span>{
+
+	<span class="hljs-keyword">this</span>.compare = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> a , b </span>) </span>{ <span class="hljs-keyword">return</span> compare( a.value , b.value ) ; } ;
+	<span class="hljs-keyword">this</span>.array = [ ] ;
+	<span class="hljs-keyword">this</span>.length = <span class="hljs-number">0</span> ;
+
+} ;
+
+DummyHeap.Reference = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> value </span>) </span>{ <span class="hljs-keyword">this</span>.value = value ; } ;
+
+DummyHeap.prototype.head = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+	<span class="hljs-keyword">if</span> ( <span class="hljs-keyword">this</span>.length === <span class="hljs-number">0</span> ) <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;
+
+	<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.array[<span class="hljs-number">0</span>].value;
+
+};
+
+
+DummyHeap.prototype.headreference = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+	<span class="hljs-keyword">if</span> ( <span class="hljs-keyword">this</span>.length === <span class="hljs-number">0</span> ) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+
+	<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.array[<span class="hljs-number">0</span>];
+
+};
+
+
+DummyHeap.prototype.pop = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+	<span class="hljs-keyword">if</span> ( <span class="hljs-keyword">this</span>.length === <span class="hljs-number">0</span> ) <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;
+
+	--<span class="hljs-keyword">this</span>.length ;
+	<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.array.shift( ).value ;
+
+};
+
+
+DummyHeap.prototype.popreference = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+
+	<span class="hljs-keyword">if</span> ( <span class="hljs-keyword">this</span>.length === <span class="hljs-number">0</span> ) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span> ;
+
+	--<span class="hljs-keyword">this</span>.length ;
+	<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.array.shift( ) ;
+
+};
+
+
+DummyHeap.prototype.push = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> value </span>) </span>{
+
+	<span class="hljs-keyword">var</span> reference = <span class="hljs-keyword">new</span> DummyHeap.Reference( value ) ;
+
+	<span class="hljs-keyword">this</span>.pushreference( reference ) ;
+
+	<span class="hljs-keyword">return</span> reference ;
+
+};
+
+
+DummyHeap.prototype.pushreference = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> reference </span>) </span>{
+
+	<span class="hljs-keyword">this</span>.array.push( reference ) ;
+
+	<span class="hljs-keyword">this</span>.array.sort( <span class="hljs-keyword">this</span>.compare ) ;
+
+	++<span class="hljs-keyword">this</span>.length;
+
+};
+
+
+DummyHeap.prototype.merge = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> other </span>) </span>{
+
+	<span class="hljs-keyword">this</span>.array = <span class="hljs-keyword">this</span>.array.concat( other.array ).sort( <span class="hljs-keyword">this</span>.compare ) ;
+
+	<span class="hljs-keyword">this</span>.length += other.length;
+
+} ;
+
+
+DummyHeap.prototype.update = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> reference, value </span>) </span>{
+
+	reference.value = value ;
+
+	<span class="hljs-keyword">this</span>.array.sort( <span class="hljs-keyword">this</span>.compare ) ;
+
+};
+
+DummyHeap.prototype.decreasekey = DummyHeap.prototype.update ;
+
+DummyHeap.prototype.increasekey = DummyHeap.prototype.update ;
+
+DummyHeap.prototype.delete = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> reference </span>) </span>{
+
+	<span class="hljs-keyword">this</span>.array.splice( <span class="hljs-keyword">this</span>.array.indexOf( reference ) , <span class="hljs-number">1</span> ) ;
+	--<span class="hljs-keyword">this</span>.length ;
+
+};
+
+exports.DummyHeap = DummyHeap;</div></div></div></div></body></html>
