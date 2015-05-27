@@ -23,18 +23,19 @@
 	},
 	"author": "aureooms",
 	"devDependencies": {
-		"aureooms-js-array": "^2.0.1",
-		"aureooms-js-compare": "^1.3.0",
-		"aureooms-js-functools": "^1.2.0",
-		"aureooms-js-itertools": "^0.2.0",
-		"aureooms-js-operator": "^1.0.0",
-		"aureooms-js-random": "^0.0.3",
-		"aureooms-js-sort": "^3.1.0",
-		"aureooms-node-package": "^2.0.2"
+		"aureooms-node-package": "^4.2.5"
 	},
 	"bugs": {
 		"url": "https://github.com/aureooms/js-heap-spec/issues"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"aureooms-js-array": "^2.2.0",
+		"aureooms-js-compare": "^1.4.3",
+		"aureooms-js-functools": "^2.0.3",
+		"aureooms-js-itertools": "^1.1.1",
+		"aureooms-js-operator": "^1.0.2",
+		"aureooms-js-random": "^1.0.1",
+		"aureooms-js-sort": "^5.0.4"
+	},
 	"license": "AGPL-3.0"
 }
