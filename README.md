@@ -1,7 +1,7 @@
 [js-heap-spec](http://aureooms.github.io/js-heap-spec)
 ==
 
-Heap code bricks in JavaScript. Parent is
+Heap specification code bricks in JavaScript. Parent is
 [aureooms/js-data-structures](https://github.com/aureooms/js-data-structures).
 
 ```js
@@ -20,10 +20,11 @@ heapspec.test( [ [ "DummyHeap" , functools.partial( functools.create , [ heapspe
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-heap-spec.svg?style=flat)](https://github.com/aureooms/js-heap-spec/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-heap-spec.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-heap-spec)
 
-This package contains a `d`-ary heap implementation that can be parametrized
-with any `d`, and some binomial heap implementations.
+## Description
 
-Binary and Binomial heap reference:
+This package contains a specification test suite for heap implementations such as [aureooms/js-d-ary-heap](https://github.com/aureooms/js-d-ary-heap) and [aureooms/js-binomial-heap](https://github.com/aureooms/js-binomial-heap).
+
+## Binary and binomial heap reference
 
   - http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf
   - http://stackoverflow.com/questions/6531543/efficient-implementation-of-binary-heaps
