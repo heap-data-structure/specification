@@ -1,8 +1,12 @@
 [js-heap-spec](http://aureooms.github.io/js-heap-spec)
-====
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/aureooms/js-heap-spec?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+==
 
-Heap code bricks in JavaScript.
+Heap code bricks in JavaScript. Parent is
+[aureooms/js-data-structures](https://github.com/aureooms/js-data-structures).
+
+```js
+heapspec.test( [ [ "DummyHeap" , functools.partial( functools.create , [ heapspec.DummyHeap ] ) ] ] , true ) ;
+```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-heap-spec.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-heap-spec/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-heap-spec.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-heap-spec)
@@ -23,5 +27,3 @@ Binary and Binomial heap reference:
 
   - http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf
   - http://stackoverflow.com/questions/6531543/efficient-implementation-of-binary-heaps
-
-***( forked from [js-heap](https://github.com/aureooms/js-heap) )***
