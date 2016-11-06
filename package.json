@@ -35,7 +35,7 @@
 		"aureooms-js-itertools": "^3.0.0",
 		"aureooms-js-operator": "^1.0.2",
 		"aureooms-js-random": "^1.0.1",
-		"aureooms-js-sort": "^6.0.0"
+		"aureooms-js-sort": "^7.0.0"
 	},
 	"license": "AGPL-3.0"
 }
