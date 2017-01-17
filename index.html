@@ -67,7 +67,14 @@
 <p>Heap specification library in JavaScript. Parent is
 <a href="https://github.com/aureooms/js-data-structures">aureooms/js-data-structures</a>.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">import ava from &apos;ava&apos; ;
-spec.test( ava , [ [ &quot;DummyHeap&quot; , compare =&gt; new spec.DummyHeap(compare) ] ] , true ) ;</code>
+spec.test(
+  ava ,
+  [ [ &quot;DummyHeap&quot; , compare =&gt; new spec.DummyHeap(compare) ] ] ,
+  {
+    references : true ,
+    length : true ,
+  }
+) ;</code>
 </code></pre>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-heap-spec/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-heap-spec.svg?style=flat" alt="NPM license"></a>
 <a href="https://www.npmjs.org/package/aureooms-js-heap-spec"><img src="http://img.shields.io/npm/v/aureooms-js-heap-spec.svg?style=flat" alt="NPM version"></a>
