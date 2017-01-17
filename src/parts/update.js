@@ -1,7 +1,7 @@
 import { tester } from '../tester' ;
 import { shuffle } from 'aureooms-js-random' ;
 
-export function _update ( _test, heapname, Heap, diffname, diff, n ) {
+export function _update ( _test, length, heapname, Heap, diffname, diff, n ) {
 
 	const title = `Heap update (${heapname}, ${diffname}, ${n})`;
 
@@ -14,12 +14,15 @@ export function _update ( _test, heapname, Heap, diffname, diff, n ) {
 		b = [];
 		references = [];
 
+		if (length) t.deepEqual( q.length, 0, "check length zero");
+
 		i = n;
 		while ( i-- ) {
 			x = Math.random();
 			reference = q.push( x );
 			references.push( reference );
 			a.push( x );
+			if (length) t.deepEqual( q.length, a.length);
 		}
 
 		shuffle( references, 0, n );
@@ -28,9 +31,11 @@ export function _update ( _test, heapname, Heap, diffname, diff, n ) {
 
 			a[i] += Math.random() - 0.5;
 			q.update( references[i], a[i] );
+			if (length) t.deepEqual( q.length, n);
 
 			// not a typo
 			q.update( references[i], a[i] );
+			if (length) t.deepEqual( q.length, n);
 
 		}
 
@@ -39,6 +44,7 @@ export function _update ( _test, heapname, Heap, diffname, diff, n ) {
 		while ( i-- ) {
 
 			b.push( q.pop() );
+			if (length) t.deepEqual( q.length, i);
 
 		}
 
@@ -46,8 +52,7 @@ export function _update ( _test, heapname, Heap, diffname, diff, n ) {
 
 		t.deepEqual( b, a, "check identical");
 
-		t.deepEqual( q.length, 0, "check length empty");
-
+		if (length) t.deepEqual( q.length, 0, "check length zero");
 
 		t.deepEqual( q.head(), undefined, "check head empty");
 		t.deepEqual( q.headreference(), null, "check headreference empty");

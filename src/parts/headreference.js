@@ -1,6 +1,6 @@
 import { tester } from '../tester' ;
 
-export function _headreference ( _test, heapname, Heap, diffname, diff, n ) {
+export function _headreference ( _test, length, heapname, Heap, diffname, diff, n ) {
 
 	const title = `Heap headreference (${heapname}, ${diffname}, ${n})`;
 

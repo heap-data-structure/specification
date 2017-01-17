@@ -1,6 +1,6 @@
 import { tester2 } from '../tester' ;
 
-export function _merge ( _test, heapname, Heap, diffname, diff, m, n ) {
+export function _merge ( _test, length, heapname, Heap, diffname, diff, m, n ) {
 
 	const title = `Heap merge (${heapname}, ${diffname}, ${m}, ${n})`;
 
@@ -13,6 +13,9 @@ export function _merge ( _test, heapname, Heap, diffname, diff, m, n ) {
 		q1 = Heap( diff );
 		q2 = Heap( diff );
 
+		if (length) t.deepEqual( q1.length, 0, "check length zero q1" );
+		if (length) t.deepEqual( q2.length, 0, "check length zero q2" );
+
 		t.deepEqual( q.pop(), undefined, "1st empty pop" );
 
 		i = m;
@@ -20,6 +23,7 @@ export function _merge ( _test, heapname, Heap, diffname, diff, m, n ) {
 			x = Math.random();
 			q1.push(x);
 			a.push(x);
+			if (length) t.deepEqual( q1.length, a.length );
 		}
 
 		i = n;
@@ -27,6 +31,7 @@ export function _merge ( _test, heapname, Heap, diffname, diff, m, n ) {
 			x = Math.random();
 			q2.push(x);
 			a.push(x);
+			if (length) t.deepEqual( q2.length, a.length - m );
 		}
 
 		a.sort( diff );
@@ -37,15 +42,18 @@ export function _merge ( _test, heapname, Heap, diffname, diff, m, n ) {
 		i = m + n;
 		b = [];
 
+		if (length) t.deepEqual( q.length, i );
+
 		while ( i-- ) {
 			b.push( q.pop() );
+			if (length) t.deepEqual( q.length, i );
 		}
 
 		t.deepEqual( b, a, "check sorted" );
 
 		t.deepEqual( q.pop(), undefined, "2nd empty pop" );
 
-		t.deepEqual( q.length, 0, "queue empty" );
+		if (length) t.deepEqual( q.length, 0, "check length zero q" );
 
 	});
 

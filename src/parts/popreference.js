@@ -1,6 +1,6 @@
 import { tester } from '../tester' ;
 
-export function _popreference ( _test, heapname, Heap, diffname, diff, n ) {
+export function _popreference ( _test, length, heapname, Heap, diffname, diff, n ) {
 
 	const title = `Heap popreference (${heapname}, ${diffname}, ${n})`;
 
@@ -11,11 +11,14 @@ export function _popreference ( _test, heapname, Heap, diffname, diff, n ) {
 		q = Heap( diff );
 		a = [];
 
+		if (length) t.deepEqual( q.length, 0, "check length zero");
+
 		i = n;
 		while ( i-- ) {
 			x = Math.random();
 			q.push(x);
 			a.push(x);
+			if (length) t.deepEqual( q.length, a.length );
 		}
 
 		i = n;
@@ -23,6 +26,7 @@ export function _popreference ( _test, heapname, Heap, diffname, diff, n ) {
 
 		while ( i-- ) {
 			b.push( q.popreference().value );
+			if (length) t.deepEqual( q.length, i );
 		}
 
 		a.sort(diff);
@@ -31,7 +35,7 @@ export function _popreference ( _test, heapname, Heap, diffname, diff, n ) {
 
 		t.deepEqual( q.popreference(), null, "2nd empty pop" );
 
-		t.deepEqual( q.length, 0, "queue empty" );
+		if (length) t.deepEqual( q.length, 0, "check length zero" );
 
 	});
 

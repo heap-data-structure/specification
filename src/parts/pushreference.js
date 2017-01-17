@@ -1,7 +1,7 @@
 import { tester } from '../tester' ;
 import { shuffle } from 'aureooms-js-random' ;
 
-export function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {
+export function _pushreference ( _test, length, heapname, Heap, diffname, diff, n ) {
 
 	const title = `Heap pushreference (${heapname}, ${diffname}, ${n})`;
 
@@ -12,11 +12,14 @@ export function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {
 		q = Heap( diff );
 		a = [];
 
+		if (length) t.deepEqual( q.length, 0, "check length zero");
+
 		i = n;
 		while ( i-- ) {
 			x = Math.random();
 			q.push(x);
 			a.push(x);
+			if (length) t.deepEqual( q.length, a.length);
 		}
 
 		b = [];
@@ -24,6 +27,7 @@ export function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {
 		i = n;
 		while ( i-- ) {
 			b.push( q.popreference() );
+			if (length) t.deepEqual( q.length, i);
 		}
 
 		shuffle( b, 0, n );
@@ -31,11 +35,13 @@ export function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {
 		i = n;
 		while ( i-- ) {
 			q.pushreference( b.pop() );
+			if (length) t.deepEqual( q.length, n - b.length);
 		}
 
 		i = n;
 		while ( i-- ) {
 			b.push( q.popreference().value );
+			if (length) t.deepEqual( q.length, i);
 		}
 
 		a.sort(diff);
@@ -44,8 +50,7 @@ export function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {
 
 		t.deepEqual( q.popreference(), null, "2nd empty pop" );
 
-
-		t.deepEqual( q.length, 0, "queue empty" );
+		if (length) t.deepEqual( q.length, 0, "check length zero" );
 
 	});
 

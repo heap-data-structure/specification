@@ -1,6 +1,6 @@
 import { tester } from '../tester' ;
 
-export function _head ( _test, heapname, Heap, diffname, diff, n ) {
+export function _head ( _test, length, heapname, Heap, diffname, diff, n ) {
 
 	const title = `Heap head (${heapname}, ${diffname}, ${n})`;
 
@@ -19,6 +19,8 @@ export function _head ( _test, heapname, Heap, diffname, diff, n ) {
 			a.push(x);
 		}
 
+		a.sort( diff );
+
 		i = n;
 		b = [];
 
@@ -26,8 +28,6 @@ export function _head ( _test, heapname, Heap, diffname, diff, n ) {
 			b.push( q.head() );
 			q.pop();
 		}
-
-		a.sort( diff );
 
 		t.deepEqual( b, a, "check head sorted" );
 		t.deepEqual( q.head(), undefined, "check head empty" );

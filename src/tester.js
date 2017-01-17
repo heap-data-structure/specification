@@ -4,13 +4,13 @@ import functools from 'aureooms-js-functools' ;
 
 export function tester ( method ) {
 
-	return function( _test , heaps ) {
+	return function( _test , length , heaps ) {
 
 		exhaust( map(
 			functools.chain( [ chain , list , functools.partial( functools.star , [ method ] ) ] ) ,
 			product( [
 
-				[[_test]] ,
+				[[_test, length]] ,
 
 				heaps ,
 
@@ -29,13 +29,13 @@ export function tester ( method ) {
 
 export function tester2 ( method ) {
 
-	return function( _test , heaps ) {
+	return function( _test , length , heaps ) {
 
 		exhaust( map(
 			functools.chain( [ chain , list , functools.partial( functools.star , [ method ] ) ] ) ,
 			product( [
 
-				[[_test]] ,
+				[[_test, length]] ,
 
 				heaps ,
 

@@ -1,7 +1,7 @@
 import { tester } from '../tester' ;
 import { shuffle } from 'aureooms-js-random' ;
 
-export function _del ( _test, heapname, Heap, diffname, diff, n ) {
+export function _del ( _test, length, heapname, Heap, diffname, diff, n ) {
 
 	const title = `Heap delete (${heapname}, ${diffname}, ${n})`;
 
@@ -14,12 +14,15 @@ export function _del ( _test, heapname, Heap, diffname, diff, n ) {
 		b = [];
 		references = [];
 
+		if (length) t.deepEqual( q.length, 0, "check length zero" );
+
 		i = n;
 		while ( i-- ) {
 			x = Math.random();
 			reference = q.push( x );
 			references.push( reference );
 			a.push( x );
+			if (length) t.deepEqual( q.length, a.length );
 		}
 
 		shuffle( references, 0, n );
@@ -28,12 +31,14 @@ export function _del ( _test, heapname, Heap, diffname, diff, n ) {
 
 			b.push( references[i].value );
 			q.delete( references[i] );
+			if (length) t.deepEqual( q.length, a.length - b.length );
 
 		}
 
 		for ( ; i < n ; ++i ) {
 
 			b.push( q.pop() );
+			if (length) t.deepEqual( q.length, a.length - b.length );
 
 		}
 
@@ -42,7 +47,7 @@ export function _del ( _test, heapname, Heap, diffname, diff, n ) {
 
 		t.deepEqual( b, a, "check identical" );
 
-		t.deepEqual( q.length, 0, "check length empty" );
+		if (length) t.deepEqual( q.length, 0, "check length zero" );
 
 		t.deepEqual( q.head(), undefined, "check head empty" );
 		t.deepEqual( q.headreference(), null, "check headreference empty" );
