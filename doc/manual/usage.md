@@ -10,5 +10,5 @@ Then
 ```js
 const spec = require( 'aureooms-js-heap-spec' ) ;
 // or
-import spec from 'aureooms-js-heap-spec' ;
+import * as spec from 'aureooms-js-heap-spec' ;
 ```

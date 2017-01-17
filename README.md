@@ -1,11 +1,12 @@
 [js-heap-spec](http://aureooms.github.io/js-heap-spec)
 ==
 
-Heap specification code bricks in JavaScript. Parent is
+Heap specification library in JavaScript. Parent is
 [aureooms/js-data-structures](https://github.com/aureooms/js-data-structures).
 
 ```js
-heapspec.test( [ [ "DummyHeap" , functools.partial( functools.create , [ heapspec.DummyHeap ] ) ] ] , true ) ;
+import ava from 'ava' ;
+spec.test( ava , [ [ "DummyHeap" , compare => new spec.DummyHeap(compare) ] ] , true ) ;
 ```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-heap-spec.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-heap-spec/master/LICENSE)
@@ -21,7 +22,12 @@ heapspec.test( [ [ "DummyHeap" , functools.partial( functools.create , [ heapspe
 
 ## Description
 
-This package contains a specification test suite for heap implementations such as [aureooms/js-d-ary-heap](https://github.com/aureooms/js-d-ary-heap) and [aureooms/js-binomial-heap](https://github.com/aureooms/js-binomial-heap).
+This package contains a specification test suite for heap implementations such
+as
+[aureooms/js-d-ary-heap](https://github.com/aureooms/js-d-ary-heap),
+[aureooms/js-pairing-heap](https://github.com/aureooms/js-pairing-heap),
+and
+[aureooms/js-binomial-heap](https://github.com/aureooms/js-binomial-heap).
 
 ## Binary and binomial heap reference
 
