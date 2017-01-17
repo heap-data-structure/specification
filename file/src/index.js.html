@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">aureooms/js-heap-spec API Document</title>
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/index.js | aureooms/js-heap-spec API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -63,35 +63,13 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-js-heap-spec-http-aureooms-github-io-js-heap-spec-"><a href="http://aureooms.github.io/js-heap-spec">js-heap-spec</a></h1>
-<p>Heap specification library in JavaScript. Parent is
-<a href="https://github.com/aureooms/js-data-structures">aureooms/js-data-structures</a>.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">import ava from &apos;ava&apos; ;
-spec.test( ava , [ [ &quot;DummyHeap&quot; , compare =&gt; new spec.DummyHeap(compare) ] ] , true ) ;</code>
+<div class="content" data-ice="content"><h1 data-ice="title">src/index.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export * from &apos;./adt&apos; ;
+export * from &apos;./parts&apos; ;
+export * from &apos;./test&apos; ;
+export * from &apos;./tester&apos; ;
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-heap-spec/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-heap-spec.svg?style=flat" alt="NPM license"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-heap-spec"><img src="http://img.shields.io/npm/v/aureooms-js-heap-spec.svg?style=flat" alt="NPM version"></a>
-<a href="https://travis-ci.org/aureooms/js-heap-spec"><img src="http://img.shields.io/travis/aureooms/js-heap-spec.svg?style=flat" alt="Build Status"></a>
-<a href="https://coveralls.io/r/aureooms/js-heap-spec"><img src="http://img.shields.io/coveralls/aureooms/js-heap-spec.svg?style=flat" alt="Coverage Status"></a>
-<a href="https://david-dm.org/aureooms/js-heap-spec#info=dependencies"><img src="http://img.shields.io/david/aureooms/js-heap-spec.svg?style=flat" alt="Dependencies Status"></a>
-<a href="https://david-dm.org/aureooms/js-heap-spec#info=devDependencies"><img src="http://img.shields.io/david/dev/aureooms/js-heap-spec.svg?style=flat" alt="devDependencies Status"></a>
-<a href="https://codeclimate.com/github/aureooms/js-heap-spec"><img src="http://img.shields.io/codeclimate/github/aureooms/js-heap-spec.svg?style=flat" alt="Code Climate"></a>
-<a href="https://www.npmjs.org/package/aureooms-js-heap-spec"><img src="http://img.shields.io/npm/dm/aureooms-js-heap-spec.svg?style=flat" alt="NPM downloads per month"></a>
-<a href="https://github.com/aureooms/js-heap-spec/issues"><img src="http://img.shields.io/github/issues/aureooms/js-heap-spec.svg?style=flat" alt="GitHub issues"></a>
-<a href="https://aureooms.github.io/js-heap-spec/source.html"><img src="https://aureooms.github.io/js-heap-spec/badge.svg" alt="Documentation"></a></p>
-<h2 id="description">Description</h2>
-<p>This package contains a specification test suite for heap implementations such
-as
-<a href="https://github.com/aureooms/js-d-ary-heap">aureooms/js-d-ary-heap</a>,
-<a href="https://github.com/aureooms/js-pairing-heap">aureooms/js-pairing-heap</a>,
-and
-<a href="https://github.com/aureooms/js-binomial-heap">aureooms/js-binomial-heap</a>.</p>
-<h2 id="binary-and-binomial-heap-reference">Binary and binomial heap reference</h2>
-<ul>
-<li><a href="http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf">http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf</a></li>
-<li><a href="http://stackoverflow.com/questions/6531543/efficient-implementation-of-binary-heaps">http://stackoverflow.com/questions/6531543/efficient-implementation-of-binary-heaps</a></li>
-</ul>
-</div>
+
 </div>
 
 <footer class="footer">

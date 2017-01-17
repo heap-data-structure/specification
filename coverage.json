@@ -1,0 +1,116 @@
+{
+  "coverage": "0%",
+  "expectCount": 25,
+  "actualCount": 0,
+  "files": {
+    "src/adt/DummyHeap.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/adt/DummyHeapWithoutReferences.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/parts/decreasekey.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        58
+      ]
+    },
+    "src/parts/delete.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        56
+      ]
+    },
+    "src/parts/head.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        39
+      ]
+    },
+    "src/parts/headreference.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        38
+      ]
+    },
+    "src/parts/increasekey.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        59
+      ]
+    },
+    "src/parts/merge.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        54
+      ]
+    },
+    "src/parts/popreference.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        40
+      ]
+    },
+    "src/parts/pushpop.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        40
+      ]
+    },
+    "src/parts/pushreference.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        54
+      ]
+    },
+    "src/parts/update.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        61
+      ]
+    },
+    "src/test.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        15
+      ]
+    },
+    "src/tester.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        30
+      ]
+    }
+  }
+}
