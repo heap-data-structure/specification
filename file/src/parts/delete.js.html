@@ -67,7 +67,7 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { tester } from &apos;../tester&apos; ;
 import { shuffle } from &apos;aureooms-js-random&apos; ;
 
-export function _del ( _test, heapname, Heap, diffname, diff, n ) {
+export function _del ( _test, length, heapname, Heap, diffname, diff, n ) {
 
 	const title = `Heap delete (${heapname}, ${diffname}, ${n})`;
 
@@ -80,12 +80,15 @@ export function _del ( _test, heapname, Heap, diffname, diff, n ) {
 		b = [];
 		references = [];
 
+		if (length) t.deepEqual( q.length, 0, &quot;check length zero&quot; );
+
 		i = n;
 		while ( i-- ) {
 			x = Math.random();
 			reference = q.push( x );
 			references.push( reference );
 			a.push( x );
+			if (length) t.deepEqual( q.length, a.length );
 		}
 
 		shuffle( references, 0, n );
@@ -94,12 +97,14 @@ export function _del ( _test, heapname, Heap, diffname, diff, n ) {
 
 			b.push( references[i].value );
 			q.delete( references[i] );
+			if (length) t.deepEqual( q.length, a.length - b.length );
 
 		}
 
 		for ( ; i &lt; n ; ++i ) {
 
 			b.push( q.pop() );
+			if (length) t.deepEqual( q.length, a.length - b.length );
 
 		}
 
@@ -108,7 +113,7 @@ export function _del ( _test, heapname, Heap, diffname, diff, n ) {
 
 		t.deepEqual( b, a, &quot;check identical&quot; );
 
-		t.deepEqual( q.length, 0, &quot;check length empty&quot; );
+		if (length) t.deepEqual( q.length, 0, &quot;check length zero&quot; );
 
 		t.deepEqual( q.head(), undefined, &quot;check head empty&quot; );
 		t.deepEqual( q.headreference(), null, &quot;check headreference empty&quot; );

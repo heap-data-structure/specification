@@ -22,7 +22,7 @@
       "actualCount": 0,
       "undocumentLines": [
         4,
-        58
+        63
       ]
     },
     "src/parts/delete.js": {
@@ -30,7 +30,7 @@
       "actualCount": 0,
       "undocumentLines": [
         4,
-        56
+        61
       ]
     },
     "src/parts/head.js": {
@@ -54,7 +54,7 @@
       "actualCount": 0,
       "undocumentLines": [
         4,
-        59
+        63
       ]
     },
     "src/parts/merge.js": {
@@ -62,7 +62,7 @@
       "actualCount": 0,
       "undocumentLines": [
         3,
-        54
+        62
       ]
     },
     "src/parts/popreference.js": {
@@ -70,7 +70,7 @@
       "actualCount": 0,
       "undocumentLines": [
         3,
-        40
+        44
       ]
     },
     "src/parts/pushpop.js": {
@@ -78,7 +78,7 @@
       "actualCount": 0,
       "undocumentLines": [
         3,
-        40
+        44
       ]
     },
     "src/parts/pushreference.js": {
@@ -86,7 +86,7 @@
       "actualCount": 0,
       "undocumentLines": [
         4,
-        54
+        59
       ]
     },
     "src/parts/update.js": {
@@ -94,7 +94,7 @@
       "actualCount": 0,
       "undocumentLines": [
         4,
-        61
+        66
       ]
     },
     "src/test.js": {

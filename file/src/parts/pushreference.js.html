@@ -67,7 +67,7 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { tester } from &apos;../tester&apos; ;
 import { shuffle } from &apos;aureooms-js-random&apos; ;
 
-export function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {
+export function _pushreference ( _test, length, heapname, Heap, diffname, diff, n ) {
 
 	const title = `Heap pushreference (${heapname}, ${diffname}, ${n})`;
 
@@ -78,11 +78,14 @@ export function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {
 		q = Heap( diff );
 		a = [];
 
+		if (length) t.deepEqual( q.length, 0, &quot;check length zero&quot;);
+
 		i = n;
 		while ( i-- ) {
 			x = Math.random();
 			q.push(x);
 			a.push(x);
+			if (length) t.deepEqual( q.length, a.length);
 		}
 
 		b = [];
@@ -90,6 +93,7 @@ export function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {
 		i = n;
 		while ( i-- ) {
 			b.push( q.popreference() );
+			if (length) t.deepEqual( q.length, i);
 		}
 
 		shuffle( b, 0, n );
@@ -97,11 +101,13 @@ export function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {
 		i = n;
 		while ( i-- ) {
 			q.pushreference( b.pop() );
+			if (length) t.deepEqual( q.length, n - b.length);
 		}
 
 		i = n;
 		while ( i-- ) {
 			b.push( q.popreference().value );
+			if (length) t.deepEqual( q.length, i);
 		}
 
 		a.sort(diff);
@@ -110,8 +116,7 @@ export function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {
 
 		t.deepEqual( q.popreference(), null, &quot;2nd empty pop&quot; );
 
-
-		t.deepEqual( q.length, 0, &quot;queue empty&quot; );
+		if (length) t.deepEqual( q.length, 0, &quot;check length zero&quot; );
 
 	});
 

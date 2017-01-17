@@ -66,7 +66,7 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/parts/pushpop.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { tester } from &apos;../tester&apos; ;
 
-export function _pushpop ( _test, heapname, Heap, diffname, diff, n ) {
+export function _pushpop ( _test, length, heapname, Heap, diffname, diff, n ) {
 
 	const title = `Heap pushpop (${heapname}, ${diffname}, ${n})`;
 
@@ -77,11 +77,14 @@ export function _pushpop ( _test, heapname, Heap, diffname, diff, n ) {
 		q = Heap( diff );
 		a = [];
 
+		if (length) t.deepEqual( q.length, 0, &quot;check length zero&quot;);
+
 		i = n;
 		while ( i-- ) {
 			x = Math.random();
 			q.push(x);
 			a.push(x);
+			if (length) t.deepEqual( q.length, a.length );
 		}
 
 		a.sort(diff);
@@ -91,13 +94,14 @@ export function _pushpop ( _test, heapname, Heap, diffname, diff, n ) {
 
 		while ( i-- ) {
 			b.push( q.pop() );
+			if (length) t.deepEqual( q.length, i );
 		}
 
 		t.deepEqual( b, a, &quot;check sorted&quot; );
 
 		t.deepEqual( q.pop(), undefined, &quot;2nd empty pop&quot; );
 
-		t.deepEqual( q.length, 0, &quot;queue empty&quot; );
+		if (length) t.deepEqual( q.length, 0, &quot;check length zero&quot; );
 
 	});
 

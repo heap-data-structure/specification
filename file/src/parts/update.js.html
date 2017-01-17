@@ -67,7 +67,7 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { tester } from &apos;../tester&apos; ;
 import { shuffle } from &apos;aureooms-js-random&apos; ;
 
-export function _update ( _test, heapname, Heap, diffname, diff, n ) {
+export function _update ( _test, length, heapname, Heap, diffname, diff, n ) {
 
 	const title = `Heap update (${heapname}, ${diffname}, ${n})`;
 
@@ -80,12 +80,15 @@ export function _update ( _test, heapname, Heap, diffname, diff, n ) {
 		b = [];
 		references = [];
 
+		if (length) t.deepEqual( q.length, 0, &quot;check length zero&quot;);
+
 		i = n;
 		while ( i-- ) {
 			x = Math.random();
 			reference = q.push( x );
 			references.push( reference );
 			a.push( x );
+			if (length) t.deepEqual( q.length, a.length);
 		}
 
 		shuffle( references, 0, n );
@@ -94,9 +97,11 @@ export function _update ( _test, heapname, Heap, diffname, diff, n ) {
 
 			a[i] += Math.random() - 0.5;
 			q.update( references[i], a[i] );
+			if (length) t.deepEqual( q.length, n);
 
 			// not a typo
 			q.update( references[i], a[i] );
+			if (length) t.deepEqual( q.length, n);
 
 		}
 
@@ -105,6 +110,7 @@ export function _update ( _test, heapname, Heap, diffname, diff, n ) {
 		while ( i-- ) {
 
 			b.push( q.pop() );
+			if (length) t.deepEqual( q.length, i);
 
 		}
 
@@ -112,8 +118,7 @@ export function _update ( _test, heapname, Heap, diffname, diff, n ) {
 
 		t.deepEqual( b, a, &quot;check identical&quot;);
 
-		t.deepEqual( q.length, 0, &quot;check length empty&quot;);
-
+		if (length) t.deepEqual( q.length, 0, &quot;check length zero&quot;);
 
 		t.deepEqual( q.head(), undefined, &quot;check head empty&quot;);
 		t.deepEqual( q.headreference(), null, &quot;check headreference empty&quot;);

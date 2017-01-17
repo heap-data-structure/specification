@@ -542,7 +542,7 @@
     "__docId__": 20,
     "kind": "file",
     "name": "src/parts/decreasekey.js",
-    "content": "import { tester } from '../tester' ;\nimport { shuffle } from 'aureooms-js-random' ;\n\nexport function _decreasekey ( _test, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap decreasekey (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, reference, references, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\t\tb = [];\n\t\treferences = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\treference = q.push( x );\n\t\t\treferences.push( reference );\n\t\t\ta.push( x );\n\t\t}\n\n\t\tshuffle( references, 0, n );\n\n\t\tfor ( i = 0 ; i < n ; ++i ) {\n\n\t\t\ta[i] -= Math.random();\n\t\t\tq.decreasekey( references[i], a[i] );\n\n\t\t}\n\n\t\ti = n;\n\n\t\twhile ( i-- ) {\n\n\t\t\tb.push( q.pop() );\n\n\t\t}\n\n\t\ta.sort( diff );\n\t\tb.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check identical\" );\n\n\t\tt.deepEqual( q.length, 0, \"check length empty\" );\n\n\t\tt.deepEqual( q.head(), undefined, \"check head empty\" );\n\t\tt.deepEqual( q.headreference(), null, \"check headreference empty\" );\n\t\tt.deepEqual( q.pop(), undefined, \"check pop empty\" );\n\t\tt.deepEqual( q.popreference(), null, \"check popreference empty\" );\n\n\t});\n\n}\n\nexport const decreasekey = tester( _decreasekey ) ;\n",
+    "content": "import { tester } from '../tester' ;\nimport { shuffle } from 'aureooms-js-random' ;\n\nexport function _decreasekey ( _test, length, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap decreasekey (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, reference, references, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\t\tb = [];\n\t\treferences = [];\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\" );\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\treference = q.push( x );\n\t\t\treferences.push( reference );\n\t\t\ta.push( x );\n\t\t\tif (length) t.deepEqual( q.length, a.length );\n\t\t}\n\n\t\tshuffle( references, 0, n );\n\n\t\tfor ( i = 0 ; i < n ; ++i ) {\n\n\t\t\ta[i] -= Math.random();\n\t\t\tq.decreasekey( references[i], a[i] );\n\t\t\tif (length) t.deepEqual( q.length, n );\n\n\t\t}\n\n\t\ti = n;\n\n\t\twhile ( i-- ) {\n\n\t\t\tb.push( q.pop() );\n\t\t\tif (length) t.deepEqual( q.length, i );\n\n\t\t}\n\n\t\ta.sort( diff );\n\t\tb.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check identical\" );\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\" );\n\n\t\tt.deepEqual( q.head(), undefined, \"check head empty\" );\n\t\tt.deepEqual( q.headreference(), null, \"check headreference empty\" );\n\t\tt.deepEqual( q.pop(), undefined, \"check pop empty\" );\n\t\tt.deepEqual( q.popreference(), null, \"check popreference empty\" );\n\n\t});\n\n}\n\nexport const decreasekey = tester( _decreasekey ) ;\n",
     "static": true,
     "longname": "src/parts/decreasekey.js",
     "access": null,
@@ -574,6 +574,12 @@
     "params": [
       {
         "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
         "types": [
           "*"
         ]
@@ -622,7 +628,7 @@
     "importPath": "aureooms-js-heap-spec/src/parts/decreasekey.js",
     "importStyle": "{decreasekey}",
     "description": null,
-    "lineNumber": 58,
+    "lineNumber": 63,
     "undocument": true,
     "unknown": [
       {
@@ -640,7 +646,7 @@
     "__docId__": 23,
     "kind": "file",
     "name": "src/parts/delete.js",
-    "content": "import { tester } from '../tester' ;\nimport { shuffle } from 'aureooms-js-random' ;\n\nexport function _del ( _test, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap delete (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, reference, references, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\t\tb = [];\n\t\treferences = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\treference = q.push( x );\n\t\t\treferences.push( reference );\n\t\t\ta.push( x );\n\t\t}\n\n\t\tshuffle( references, 0, n );\n\n\t\tfor ( i = 0 ; i < n / 2 ; ++i ) {\n\n\t\t\tb.push( references[i].value );\n\t\t\tq.delete( references[i] );\n\n\t\t}\n\n\t\tfor ( ; i < n ; ++i ) {\n\n\t\t\tb.push( q.pop() );\n\n\t\t}\n\n\t\ta.sort( diff );\n\t\tb.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check identical\" );\n\n\t\tt.deepEqual( q.length, 0, \"check length empty\" );\n\n\t\tt.deepEqual( q.head(), undefined, \"check head empty\" );\n\t\tt.deepEqual( q.headreference(), null, \"check headreference empty\" );\n\t\tt.deepEqual( q.pop(), undefined, \"check pop empty\" );\n\t\tt.deepEqual( q.popreference(), null, \"check popreference empty\" );\n\n\t});\n\n}\n\nexport const del = tester( _del ) ;\n",
+    "content": "import { tester } from '../tester' ;\nimport { shuffle } from 'aureooms-js-random' ;\n\nexport function _del ( _test, length, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap delete (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, reference, references, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\t\tb = [];\n\t\treferences = [];\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\" );\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\treference = q.push( x );\n\t\t\treferences.push( reference );\n\t\t\ta.push( x );\n\t\t\tif (length) t.deepEqual( q.length, a.length );\n\t\t}\n\n\t\tshuffle( references, 0, n );\n\n\t\tfor ( i = 0 ; i < n / 2 ; ++i ) {\n\n\t\t\tb.push( references[i].value );\n\t\t\tq.delete( references[i] );\n\t\t\tif (length) t.deepEqual( q.length, a.length - b.length );\n\n\t\t}\n\n\t\tfor ( ; i < n ; ++i ) {\n\n\t\t\tb.push( q.pop() );\n\t\t\tif (length) t.deepEqual( q.length, a.length - b.length );\n\n\t\t}\n\n\t\ta.sort( diff );\n\t\tb.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check identical\" );\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\" );\n\n\t\tt.deepEqual( q.head(), undefined, \"check head empty\" );\n\t\tt.deepEqual( q.headreference(), null, \"check headreference empty\" );\n\t\tt.deepEqual( q.pop(), undefined, \"check pop empty\" );\n\t\tt.deepEqual( q.popreference(), null, \"check popreference empty\" );\n\n\t});\n\n}\n\nexport const del = tester( _del ) ;\n",
     "static": true,
     "longname": "src/parts/delete.js",
     "access": null,
@@ -672,6 +678,12 @@
     "params": [
       {
         "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
         "types": [
           "*"
         ]
@@ -720,7 +732,7 @@
     "importPath": "aureooms-js-heap-spec/src/parts/delete.js",
     "importStyle": "{del}",
     "description": null,
-    "lineNumber": 56,
+    "lineNumber": 61,
     "undocument": true,
     "unknown": [
       {
@@ -738,7 +750,7 @@
     "__docId__": 26,
     "kind": "file",
     "name": "src/parts/head.js",
-    "content": "import { tester } from '../tester' ;\n\nexport function _head ( _test, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap head (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\n\t\ti = n;\n\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\ti = n;\n\t\tb = [];\n\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.head() );\n\t\t\tq.pop();\n\t\t}\n\n\t\ta.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check head sorted\" );\n\t\tt.deepEqual( q.head(), undefined, \"check head empty\" );\n\n\t});\n\n}\n\nexport const head = tester( _head ) ;\n",
+    "content": "import { tester } from '../tester' ;\n\nexport function _head ( _test, length, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap head (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\n\t\ti = n;\n\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\ta.sort( diff );\n\n\t\ti = n;\n\t\tb = [];\n\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.head() );\n\t\t\tq.pop();\n\t\t}\n\n\t\tt.deepEqual( b, a, \"check head sorted\" );\n\t\tt.deepEqual( q.head(), undefined, \"check head empty\" );\n\n\t});\n\n}\n\nexport const head = tester( _head ) ;\n",
     "static": true,
     "longname": "src/parts/head.js",
     "access": null,
@@ -770,6 +782,12 @@
     "params": [
       {
         "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
         "types": [
           "*"
         ]
@@ -836,7 +854,7 @@
     "__docId__": 29,
     "kind": "file",
     "name": "src/parts/headreference.js",
-    "content": "import { tester } from '../tester' ;\n\nexport function _headreference ( _test, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap headreference (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\ti = n;\n\t\tb = [];\n\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.headreference().value );\n\t\t\tq.pop();\n\t\t}\n\n\t\ta.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check head reference sorted\" );\n\t\tt.deepEqual( q.headreference(), null, \"check head reference empty\" );\n\n\t});\n\n}\n\nexport const headreference = tester( _headreference ) ;\n",
+    "content": "import { tester } from '../tester' ;\n\nexport function _headreference ( _test, length, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap headreference (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\ti = n;\n\t\tb = [];\n\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.headreference().value );\n\t\t\tq.pop();\n\t\t}\n\n\t\ta.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check head reference sorted\" );\n\t\tt.deepEqual( q.headreference(), null, \"check head reference empty\" );\n\n\t});\n\n}\n\nexport const headreference = tester( _headreference ) ;\n",
     "static": true,
     "longname": "src/parts/headreference.js",
     "access": null,
@@ -868,6 +886,12 @@
     "params": [
       {
         "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
         "types": [
           "*"
         ]
@@ -934,7 +958,7 @@
     "__docId__": 32,
     "kind": "file",
     "name": "src/parts/increasekey.js",
-    "content": "import { tester } from '../tester' ;\nimport { shuffle } from 'aureooms-js-random' ;\n\nexport function _increasekey ( _test, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap increasekey (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, reference, references, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\t\tb = [];\n\t\treferences = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\treference = q.push( x );\n\t\t\treferences.push( reference );\n\t\t\ta.push( x );\n\t\t}\n\n\t\tshuffle( references, 0, n );\n\n\t\tfor ( i = 0 ; i < n ; ++i ) {\n\n\t\t\ta[i] += Math.random();\n\t\t\tq.increasekey( references[i], a[i] );\n\n\t\t}\n\n\t\ti = n;\n\n\t\twhile ( i-- ) {\n\n\t\t\tb.push( q.pop() );\n\n\t\t}\n\n\t\ta.sort( diff );\n\t\tb.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check identical\" );\n\n\t\tt.deepEqual( q.length, 0, \"check length empty\" );\n\n\n\t\tt.deepEqual( q.head(), undefined, \"check head empty\" );\n\t\tt.deepEqual( q.headreference(), null, \"check headreference empty\" );\n\t\tt.deepEqual( q.pop(), undefined, \"check pop empty\" );\n\t\tt.deepEqual( q.popreference(), null, \"check popreference empty\" );\n\n\t});\n\n}\n\nexport const increasekey = tester( _increasekey ) ;\n",
+    "content": "import { tester } from '../tester' ;\nimport { shuffle } from 'aureooms-js-random' ;\n\nexport function _increasekey ( _test, length, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap increasekey (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, reference, references, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\t\tb = [];\n\t\treferences = [];\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\" );\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\treference = q.push( x );\n\t\t\treferences.push( reference );\n\t\t\ta.push( x );\n\t\t\tif (length) t.deepEqual( q.length, a.length );\n\t\t}\n\n\t\tshuffle( references, 0, n );\n\n\t\tfor ( i = 0 ; i < n ; ++i ) {\n\n\t\t\ta[i] += Math.random();\n\t\t\tq.increasekey( references[i], a[i] );\n\t\t\tif (length) t.deepEqual( q.length, n );\n\n\t\t}\n\n\t\ti = n;\n\n\t\twhile ( i-- ) {\n\n\t\t\tb.push( q.pop() );\n\t\t\tif (length) t.deepEqual( q.length, i );\n\n\t\t}\n\n\t\ta.sort( diff );\n\t\tb.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check identical\" );\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\" );\n\n\t\tt.deepEqual( q.head(), undefined, \"check head empty\" );\n\t\tt.deepEqual( q.headreference(), null, \"check headreference empty\" );\n\t\tt.deepEqual( q.pop(), undefined, \"check pop empty\" );\n\t\tt.deepEqual( q.popreference(), null, \"check popreference empty\" );\n\n\t});\n\n}\n\nexport const increasekey = tester( _increasekey ) ;\n",
     "static": true,
     "longname": "src/parts/increasekey.js",
     "access": null,
@@ -966,6 +990,12 @@
     "params": [
       {
         "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
         "types": [
           "*"
         ]
@@ -1014,7 +1044,7 @@
     "importPath": "aureooms-js-heap-spec/src/parts/increasekey.js",
     "importStyle": "{increasekey}",
     "description": null,
-    "lineNumber": 59,
+    "lineNumber": 63,
     "undocument": true,
     "unknown": [
       {
@@ -1043,7 +1073,7 @@
     "__docId__": 36,
     "kind": "file",
     "name": "src/parts/merge.js",
-    "content": "import { tester2 } from '../tester' ;\n\nexport function _merge ( _test, heapname, Heap, diffname, diff, m, n ) {\n\n\tconst title = `Heap merge (${heapname}, ${diffname}, ${m}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, q1, q2, a, x, i, b;\n\n\t\ta = [];\n\t\tq = Heap( diff );\n\t\tq1 = Heap( diff );\n\t\tq2 = Heap( diff );\n\n\t\tt.deepEqual( q.pop(), undefined, \"1st empty pop\" );\n\n\t\ti = m;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq1.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq2.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\ta.sort( diff );\n\n\t\tq.merge( q1 );\n\t\tq.merge( q2 );\n\n\t\ti = m + n;\n\t\tb = [];\n\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.pop() );\n\t\t}\n\n\t\tt.deepEqual( b, a, \"check sorted\" );\n\n\t\tt.deepEqual( q.pop(), undefined, \"2nd empty pop\" );\n\n\t\tt.deepEqual( q.length, 0, \"queue empty\" );\n\n\t});\n\n}\n\nexport const merge = tester2( _merge ) ;\n",
+    "content": "import { tester2 } from '../tester' ;\n\nexport function _merge ( _test, length, heapname, Heap, diffname, diff, m, n ) {\n\n\tconst title = `Heap merge (${heapname}, ${diffname}, ${m}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, q1, q2, a, x, i, b;\n\n\t\ta = [];\n\t\tq = Heap( diff );\n\t\tq1 = Heap( diff );\n\t\tq2 = Heap( diff );\n\n\t\tif (length) t.deepEqual( q1.length, 0, \"check length zero q1\" );\n\t\tif (length) t.deepEqual( q2.length, 0, \"check length zero q2\" );\n\n\t\tt.deepEqual( q.pop(), undefined, \"1st empty pop\" );\n\n\t\ti = m;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq1.push(x);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual( q1.length, a.length );\n\t\t}\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq2.push(x);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual( q2.length, a.length - m );\n\t\t}\n\n\t\ta.sort( diff );\n\n\t\tq.merge( q1 );\n\t\tq.merge( q2 );\n\n\t\ti = m + n;\n\t\tb = [];\n\n\t\tif (length) t.deepEqual( q.length, i );\n\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.pop() );\n\t\t\tif (length) t.deepEqual( q.length, i );\n\t\t}\n\n\t\tt.deepEqual( b, a, \"check sorted\" );\n\n\t\tt.deepEqual( q.pop(), undefined, \"2nd empty pop\" );\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero q\" );\n\n\t});\n\n}\n\nexport const merge = tester2( _merge ) ;\n",
     "static": true,
     "longname": "src/parts/merge.js",
     "access": null,
@@ -1075,6 +1105,12 @@
     "params": [
       {
         "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
         "types": [
           "*"
         ]
@@ -1129,7 +1165,7 @@
     "importPath": "aureooms-js-heap-spec/src/parts/merge.js",
     "importStyle": "{merge}",
     "description": null,
-    "lineNumber": 54,
+    "lineNumber": 62,
     "undocument": true,
     "unknown": [
       {
@@ -1147,7 +1183,7 @@
     "__docId__": 39,
     "kind": "file",
     "name": "src/parts/popreference.js",
-    "content": "import { tester } from '../tester' ;\n\nexport function _popreference ( _test, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap popreference (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\ti = n;\n\t\tb = [];\n\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.popreference().value );\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\tt.deepEqual( b, a, \"check sorted\" );\n\n\t\tt.deepEqual( q.popreference(), null, \"2nd empty pop\" );\n\n\t\tt.deepEqual( q.length, 0, \"queue empty\" );\n\n\t});\n\n}\n\nexport const popreference = tester( _popreference ) ;\n",
+    "content": "import { tester } from '../tester' ;\n\nexport function _popreference ( _test, length, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap popreference (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\");\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual( q.length, a.length );\n\t\t}\n\n\t\ti = n;\n\t\tb = [];\n\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.popreference().value );\n\t\t\tif (length) t.deepEqual( q.length, i );\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\tt.deepEqual( b, a, \"check sorted\" );\n\n\t\tt.deepEqual( q.popreference(), null, \"2nd empty pop\" );\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\" );\n\n\t});\n\n}\n\nexport const popreference = tester( _popreference ) ;\n",
     "static": true,
     "longname": "src/parts/popreference.js",
     "access": null,
@@ -1179,6 +1215,12 @@
     "params": [
       {
         "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
         "types": [
           "*"
         ]
@@ -1227,7 +1269,7 @@
     "importPath": "aureooms-js-heap-spec/src/parts/popreference.js",
     "importStyle": "{popreference}",
     "description": null,
-    "lineNumber": 40,
+    "lineNumber": 44,
     "undocument": true,
     "unknown": [
       {
@@ -1245,7 +1287,7 @@
     "__docId__": 42,
     "kind": "file",
     "name": "src/parts/pushpop.js",
-    "content": "import { tester } from '../tester' ;\n\nexport function _pushpop ( _test, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap pushpop (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\ti = n;\n\t\tb = [];\n\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.pop() );\n\t\t}\n\n\t\tt.deepEqual( b, a, \"check sorted\" );\n\n\t\tt.deepEqual( q.pop(), undefined, \"2nd empty pop\" );\n\n\t\tt.deepEqual( q.length, 0, \"queue empty\" );\n\n\t});\n\n}\n\nexport const pushpop = tester( _pushpop ) ;\n",
+    "content": "import { tester } from '../tester' ;\n\nexport function _pushpop ( _test, length, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap pushpop (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\");\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual( q.length, a.length );\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\ti = n;\n\t\tb = [];\n\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.pop() );\n\t\t\tif (length) t.deepEqual( q.length, i );\n\t\t}\n\n\t\tt.deepEqual( b, a, \"check sorted\" );\n\n\t\tt.deepEqual( q.pop(), undefined, \"2nd empty pop\" );\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\" );\n\n\t});\n\n}\n\nexport const pushpop = tester( _pushpop ) ;\n",
     "static": true,
     "longname": "src/parts/pushpop.js",
     "access": null,
@@ -1277,6 +1319,12 @@
     "params": [
       {
         "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
         "types": [
           "*"
         ]
@@ -1325,7 +1373,7 @@
     "importPath": "aureooms-js-heap-spec/src/parts/pushpop.js",
     "importStyle": "{pushpop}",
     "description": null,
-    "lineNumber": 40,
+    "lineNumber": 44,
     "undocument": true,
     "unknown": [
       {
@@ -1343,7 +1391,7 @@
     "__docId__": 45,
     "kind": "file",
     "name": "src/parts/pushreference.js",
-    "content": "import { tester } from '../tester' ;\nimport { shuffle } from 'aureooms-js-random' ;\n\nexport function _pushreference ( _test, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap pushreference (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\tb = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.popreference() );\n\t\t}\n\n\t\tshuffle( b, 0, n );\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tq.pushreference( b.pop() );\n\t\t}\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.popreference().value );\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\tt.deepEqual( b, a, \"check sorted\" );\n\n\t\tt.deepEqual( q.popreference(), null, \"2nd empty pop\" );\n\n\n\t\tt.deepEqual( q.length, 0, \"queue empty\" );\n\n\t});\n\n}\n\nexport const pushreference = tester( _pushreference ) ;\n",
+    "content": "import { tester } from '../tester' ;\nimport { shuffle } from 'aureooms-js-random' ;\n\nexport function _pushreference ( _test, length, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap pushreference (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\");\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual( q.length, a.length);\n\t\t}\n\n\t\tb = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.popreference() );\n\t\t\tif (length) t.deepEqual( q.length, i);\n\t\t}\n\n\t\tshuffle( b, 0, n );\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tq.pushreference( b.pop() );\n\t\t\tif (length) t.deepEqual( q.length, n - b.length);\n\t\t}\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tb.push( q.popreference().value );\n\t\t\tif (length) t.deepEqual( q.length, i);\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\tt.deepEqual( b, a, \"check sorted\" );\n\n\t\tt.deepEqual( q.popreference(), null, \"2nd empty pop\" );\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\" );\n\n\t});\n\n}\n\nexport const pushreference = tester( _pushreference ) ;\n",
     "static": true,
     "longname": "src/parts/pushreference.js",
     "access": null,
@@ -1375,6 +1423,12 @@
     "params": [
       {
         "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
         "types": [
           "*"
         ]
@@ -1423,7 +1477,7 @@
     "importPath": "aureooms-js-heap-spec/src/parts/pushreference.js",
     "importStyle": "{pushreference}",
     "description": null,
-    "lineNumber": 54,
+    "lineNumber": 59,
     "undocument": true,
     "unknown": [
       {
@@ -1441,7 +1495,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/parts/update.js",
-    "content": "import { tester } from '../tester' ;\nimport { shuffle } from 'aureooms-js-random' ;\n\nexport function _update ( _test, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap update (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, reference, references, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\t\tb = [];\n\t\treferences = [];\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\treference = q.push( x );\n\t\t\treferences.push( reference );\n\t\t\ta.push( x );\n\t\t}\n\n\t\tshuffle( references, 0, n );\n\n\t\tfor ( i = 0 ; i < n ; ++i ) {\n\n\t\t\ta[i] += Math.random() - 0.5;\n\t\t\tq.update( references[i], a[i] );\n\n\t\t\t// not a typo\n\t\t\tq.update( references[i], a[i] );\n\n\t\t}\n\n\t\ti = n;\n\n\t\twhile ( i-- ) {\n\n\t\t\tb.push( q.pop() );\n\n\t\t}\n\n\t\ta.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check identical\");\n\n\t\tt.deepEqual( q.length, 0, \"check length empty\");\n\n\n\t\tt.deepEqual( q.head(), undefined, \"check head empty\");\n\t\tt.deepEqual( q.headreference(), null, \"check headreference empty\");\n\t\tt.deepEqual( q.pop(), undefined, \"check pop empty\");\n\t\tt.deepEqual( q.popreference(), null, \"check popreference empty\");\n\n\t});\n\n}\n\nexport const update = tester( _update ) ;\n",
+    "content": "import { tester } from '../tester' ;\nimport { shuffle } from 'aureooms-js-random' ;\n\nexport function _update ( _test, length, heapname, Heap, diffname, diff, n ) {\n\n\tconst title = `Heap update (${heapname}, ${diffname}, ${n})`;\n\n\t_test( title, t => {\n\n\t\tvar q, a, reference, references, i, x, b;\n\n\t\tq = Heap( diff );\n\t\ta = [];\n\t\tb = [];\n\t\treferences = [];\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\");\n\n\t\ti = n;\n\t\twhile ( i-- ) {\n\t\t\tx = Math.random();\n\t\t\treference = q.push( x );\n\t\t\treferences.push( reference );\n\t\t\ta.push( x );\n\t\t\tif (length) t.deepEqual( q.length, a.length);\n\t\t}\n\n\t\tshuffle( references, 0, n );\n\n\t\tfor ( i = 0 ; i < n ; ++i ) {\n\n\t\t\ta[i] += Math.random() - 0.5;\n\t\t\tq.update( references[i], a[i] );\n\t\t\tif (length) t.deepEqual( q.length, n);\n\n\t\t\t// not a typo\n\t\t\tq.update( references[i], a[i] );\n\t\t\tif (length) t.deepEqual( q.length, n);\n\n\t\t}\n\n\t\ti = n;\n\n\t\twhile ( i-- ) {\n\n\t\t\tb.push( q.pop() );\n\t\t\tif (length) t.deepEqual( q.length, i);\n\n\t\t}\n\n\t\ta.sort( diff );\n\n\t\tt.deepEqual( b, a, \"check identical\");\n\n\t\tif (length) t.deepEqual( q.length, 0, \"check length zero\");\n\n\t\tt.deepEqual( q.head(), undefined, \"check head empty\");\n\t\tt.deepEqual( q.headreference(), null, \"check headreference empty\");\n\t\tt.deepEqual( q.pop(), undefined, \"check pop empty\");\n\t\tt.deepEqual( q.popreference(), null, \"check popreference empty\");\n\n\t});\n\n}\n\nexport const update = tester( _update ) ;\n",
     "static": true,
     "longname": "src/parts/update.js",
     "access": null,
@@ -1473,6 +1527,12 @@
     "params": [
       {
         "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
         "types": [
           "*"
         ]
@@ -1521,7 +1581,7 @@
     "importPath": "aureooms-js-heap-spec/src/parts/update.js",
     "importStyle": "{update}",
     "description": null,
-    "lineNumber": 61,
+    "lineNumber": 66,
     "undocument": true,
     "unknown": [
       {
@@ -1539,7 +1599,7 @@
     "__docId__": 51,
     "kind": "file",
     "name": "src/test.js",
-    "content": "\nimport {\n\thead ,\n\tpushpop ,\n\tmerge ,\n\tupdate ,\n\tdecreasekey ,\n\tincreasekey ,\n\tdel ,\n\theadreference ,\n\tpopreference ,\n\tpushreference ,\n} from './parts' ;\n\nexport function test ( _test , heaps , references ) {\n\n\thead( _test , heaps ) ;\n\tpushpop( _test , heaps ) ;\n\tmerge( _test , heaps ) ;\n\n\tif ( !references ) return ;\n\n\tupdate( _test , heaps ) ;\n\tdecreasekey( _test , heaps ) ;\n\tincreasekey( _test , heaps ) ;\n\tdel( _test , heaps ) ;\n\theadreference( _test , heaps ) ;\n\tpopreference( _test , heaps ) ;\n\tpushreference( _test , heaps ) ;\n\n}\n",
+    "content": "\nimport {\n\thead ,\n\tpushpop ,\n\tmerge ,\n\tupdate ,\n\tdecreasekey ,\n\tincreasekey ,\n\tdel ,\n\theadreference ,\n\tpopreference ,\n\tpushreference ,\n} from './parts' ;\n\nexport function test ( _test , heaps , { references , length } = {\n\treferences : true ,\n\tlength : false ,\n} ) {\n\n\thead( _test , length , heaps ) ;\n\tpushpop( _test , length , heaps ) ;\n\tmerge( _test , length , heaps ) ;\n\n\tif ( !references ) return ;\n\n\tupdate( _test , length , heaps ) ;\n\tdecreasekey( _test , length , heaps ) ;\n\tincreasekey( _test , length , heaps ) ;\n\tdel( _test , length , heaps ) ;\n\theadreference( _test , length , heaps ) ;\n\tpopreference( _test , length , heaps ) ;\n\tpushreference( _test , length , heaps ) ;\n\n}\n",
     "static": true,
     "longname": "src/test.js",
     "access": null,
@@ -1582,10 +1642,16 @@
         ]
       },
       {
-        "name": "references",
+        "name": "objectPattern2",
+        "optional": true,
         "types": [
-          "*"
-        ]
+          "{\"references\": boolean, \"length\": boolean}"
+        ],
+        "defaultRaw": {
+          "references": true,
+          "length": false
+        },
+        "defaultValue": "{\"references\":true,\"length\":false}"
       }
     ]
   },
@@ -1593,7 +1659,7 @@
     "__docId__": 53,
     "kind": "file",
     "name": "src/tester.js",
-    "content": "import { increasing , decreasing } from 'aureooms-js-compare' ;\nimport { map , chain , list , product , exhaust } from 'aureooms-js-itertools' ;\nimport functools from 'aureooms-js-functools' ;\n\nexport function tester ( method ) {\n\n\treturn function( _test , heaps ) {\n\n\t\texhaust( map(\n\t\t\tfunctools.chain( [ chain , list , functools.partial( functools.star , [ method ] ) ] ) ,\n\t\t\tproduct( [\n\n\t\t\t\t[[_test]] ,\n\n\t\t\t\theaps ,\n\n\t\t\t\t[\n\t\t\t\t\t[\"increasing\", increasing],\n\t\t\t\t\t[\"decreasing\", decreasing]\n\t\t\t\t],\n\n\t\t\t\t[[1], [16], [17], [31], [32], [33], [63], [64], [65]]\n\n\t\t\t], 1 )\n\t\t) ) ;\n\n\t} ;\n}\n\nexport function tester2 ( method ) {\n\n\treturn function( _test , heaps ) {\n\n\t\texhaust( map(\n\t\t\tfunctools.chain( [ chain , list , functools.partial( functools.star , [ method ] ) ] ) ,\n\t\t\tproduct( [\n\n\t\t\t\t[[_test]] ,\n\n\t\t\t\theaps ,\n\n\t\t\t\t[\n\t\t\t\t\t[\"increasing\", increasing],\n\t\t\t\t\t[\"decreasing\", decreasing]\n\t\t\t\t],\n\n\t\t\t\t[[1], [16], [17], [31], [32], [33], [63], [64], [65]],\n\t\t\t\t[[1], [16], [17], [31], [32], [33], [63], [64], [65]]\n\n\t\t\t], 1 )\n\t\t) ) ;\n\n\t} ;\n}\n",
+    "content": "import { increasing , decreasing } from 'aureooms-js-compare' ;\nimport { map , chain , list , product , exhaust } from 'aureooms-js-itertools' ;\nimport functools from 'aureooms-js-functools' ;\n\nexport function tester ( method ) {\n\n\treturn function( _test , length , heaps ) {\n\n\t\texhaust( map(\n\t\t\tfunctools.chain( [ chain , list , functools.partial( functools.star , [ method ] ) ] ) ,\n\t\t\tproduct( [\n\n\t\t\t\t[[_test, length]] ,\n\n\t\t\t\theaps ,\n\n\t\t\t\t[\n\t\t\t\t\t[\"increasing\", increasing],\n\t\t\t\t\t[\"decreasing\", decreasing]\n\t\t\t\t],\n\n\t\t\t\t[[1], [16], [17], [31], [32], [33], [63], [64], [65]]\n\n\t\t\t], 1 )\n\t\t) ) ;\n\n\t} ;\n}\n\nexport function tester2 ( method ) {\n\n\treturn function( _test , length , heaps ) {\n\n\t\texhaust( map(\n\t\t\tfunctools.chain( [ chain , list , functools.partial( functools.star , [ method ] ) ] ) ,\n\t\t\tproduct( [\n\n\t\t\t\t[[_test, length]] ,\n\n\t\t\t\theaps ,\n\n\t\t\t\t[\n\t\t\t\t\t[\"increasing\", increasing],\n\t\t\t\t\t[\"decreasing\", decreasing]\n\t\t\t\t],\n\n\t\t\t\t[[1], [16], [17], [31], [32], [33], [63], [64], [65]],\n\t\t\t\t[[1], [16], [17], [31], [32], [33], [63], [64], [65]]\n\n\t\t\t], 1 )\n\t\t) ) ;\n\n\t} ;\n}\n",
     "static": true,
     "longname": "src/tester.js",
     "access": null,
