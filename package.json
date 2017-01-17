@@ -23,13 +23,10 @@
     "url": "https://github.com/aureooms/js-heap-spec/issues"
   },
   "dependencies": {
-    "aureooms-js-array": "^3.1.0",
     "aureooms-js-compare": "^1.4.5",
     "aureooms-js-functools": "^2.0.3",
     "aureooms-js-itertools": "^3.1.1",
-    "aureooms-js-operator": "^1.0.2",
-    "aureooms-js-random": "^1.0.2",
-    "aureooms-js-sort": "^7.0.0"
+    "aureooms-js-random": "^1.0.2"
   },
   "devDependencies": {
     "ava": "^0.17.0",
