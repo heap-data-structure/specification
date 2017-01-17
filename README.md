@@ -6,7 +6,14 @@ Heap specification library in JavaScript. Parent is
 
 ```js
 import ava from 'ava' ;
-spec.test( ava , [ [ "DummyHeap" , compare => new spec.DummyHeap(compare) ] ] , true ) ;
+spec.test(
+  ava ,
+  [ [ "DummyHeap" , compare => new spec.DummyHeap(compare) ] ] ,
+  {
+    references : true ,
+    length : true ,
+  }
+) ;
 ```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-heap-spec.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-heap-spec/master/LICENSE)
