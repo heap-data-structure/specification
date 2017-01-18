@@ -1,8 +1,8 @@
 [js-heap-spec](http://aureooms.github.io/js-heap-spec)
 ==
 
-Heap specification library in JavaScript. Parent is
-[aureooms/js-data-structures](https://github.com/aureooms/js-data-structures).
+Heap specification library for JavaScript.
+Parent is [aureooms/js-heap](https://github.com/aureooms/js-heap).
 
 ```js
 import ava from 'ava' ;
