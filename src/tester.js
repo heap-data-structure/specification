@@ -1,6 +1,6 @@
-import { increasing , decreasing } from 'aureooms-js-compare' ;
-import { map , chain , list , product , exhaust } from 'aureooms-js-itertools' ;
-import functools from 'aureooms-js-functools' ;
+import { increasing , decreasing } from '@aureooms/js-compare' ;
+import { map , chain , list , product , exhaust } from '@aureooms/js-itertools' ;
+import functools from '@aureooms/js-functools' ;
 
 export function tester ( method ) {
 
