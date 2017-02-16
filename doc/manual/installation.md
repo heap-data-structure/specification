@@ -4,10 +4,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:aureooms-js-heap-spec
+jspm install npm:@aureooms/js-heap-spec
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-heap-spec --save
+npm install @aureooms/js-heap-spec --save
 ```
