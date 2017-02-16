@@ -16,7 +16,7 @@ spec.test(
 ) ;
 ```
 
-[![NPM license](https://img.shields.io/npm/l/@aureooms/js-heap-spec.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-heap-spec/master/LICENSE)
+[![License](https://img.shields.io/github/license/aureooms/js-heap-spec.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-heap-spec/master/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-heap-spec.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-heap-spec)
 [![Build Status](https://img.shields.io/travis/aureooms/js-heap-spec.svg?style=flat)](https://travis-ci.org/aureooms/js-heap-spec)
 [![Coverage Status](https://img.shields.io/coveralls/aureooms/js-heap-spec.svg?style=flat)](https://coveralls.io/r/aureooms/js-heap-spec)
