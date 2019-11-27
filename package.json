@@ -29,14 +29,14 @@
     "@aureooms/js-random": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.19.0",
-    "babel-cli": "^6.18.0",
-    "babel-polyfill": "^6.20.0",
-    "babel-preset-latest": "^6.16.0",
-    "codeclimate-test-reporter": "^0.4.0",
-    "coveralls": "^2.11.15",
-    "esdoc": "^0.5.2",
-    "nyc": "^10.0.0"
+    "ava": "0.19.1",
+    "babel-cli": "6.26.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-latest": "6.24.1",
+    "codeclimate-test-reporter": "0.4.1",
+    "coveralls": "2.13.3",
+    "esdoc": "0.5.2",
+    "nyc": "10.3.2"
   },
   "homepage": "http://aureooms.github.io/js-heap-spec/",
   "keywords": [
