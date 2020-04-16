@@ -12,23 +12,23 @@ import {
 	pushreference ,
 } from './parts' ;
 
-export function test ( _test , heaps , { references , length } = {
+export function test ( _test , heaps , { references , length , lengths , lengths1 , lengths2 } = {
 	references : true ,
 	length : false ,
 } ) {
 
-	head( _test , length , heaps ) ;
-	pushpop( _test , length , heaps ) ;
-	merge( _test , length , heaps ) ;
+	head( _test , length , heaps , lengths ) ;
+	pushpop( _test , length , heaps , lengths ) ;
+	merge( _test , length , heaps , lengths1 || lengths , lengths2 ) ;
 
 	if ( !references ) return ;
 
-	update( _test , length , heaps ) ;
-	decreasekey( _test , length , heaps ) ;
-	increasekey( _test , length , heaps ) ;
-	del( _test , length , heaps ) ;
-	headreference( _test , length , heaps ) ;
-	popreference( _test , length , heaps ) ;
-	pushreference( _test , length , heaps ) ;
+	update( _test , length , heaps , lengths ) ;
+	decreasekey( _test , length , heaps , lengths ) ;
+	increasekey( _test , length , heaps , lengths ) ;
+	del( _test , length , heaps , lengths ) ;
+	headreference( _test , length , heaps , lengths ) ;
+	popreference( _test , length , heaps , lengths ) ;
+	pushreference( _test , length , heaps , lengths ) ;
 
 }
