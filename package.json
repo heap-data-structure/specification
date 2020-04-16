@@ -49,6 +49,9 @@
     "np": "6.2.1",
     "nyc": "15.0.1"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "http://aureooms.github.io/js-heap-spec/",
   "keywords": [
     "bricks",
