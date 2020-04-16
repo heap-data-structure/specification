@@ -1,7 +1,7 @@
 {
   "name": "@aureooms/js-heap-spec",
   "description": "Heap specification code bricks for JavaScript",
-  "version": "11.0.0",
+  "version": "12.0.0",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
     "files": [
