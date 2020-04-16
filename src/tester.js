@@ -2,7 +2,7 @@ import { increasing , decreasing } from '@aureooms/js-compare' ;
 import { map , chain , list , product , exhaust } from '@aureooms/js-itertools' ;
 import functools from '@aureooms/js-functools' ;
 
-const DEFAULT_LENGTHS = [[1], [16], [17], [31], [32], [33], [63], [64], [65]] ;
+const DEFAULT_LENGTHS = [[0], [1], [16], [17], [31], [32], [33], [63], [64], [65]] ;
 
 export function tester ( method ) {
 
