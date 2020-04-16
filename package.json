@@ -46,6 +46,7 @@
     "esdoc-inject-script-plugin": "1.0.0",
     "esdoc-inject-style-plugin": "1.0.0",
     "esdoc-standard-plugin": "1.0.0",
+    "np": "6.2.1",
     "nyc": "15.0.1"
   },
   "homepage": "http://aureooms.github.io/js-heap-spec/",
@@ -64,10 +65,11 @@
     "type": "git"
   },
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "rm -rf lib && babel src -d lib",
     "cover": "nyc --reporter=lcov npm test",
     "esdoc": "esdoc",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
+    "release": "np",
     "test": "ava"
   }
 }
