@@ -19,12 +19,12 @@ spec.test(
 
 spec.test(
 	ava ,
-	[ [ "DummyHeap" , partial( create , [ spec.DummyHeap ] ) ] ] ,
+	[ [ "DummyHeap (length: false)" , partial( create , [ spec.DummyHeap ] ) ] ] ,
 	{ references : true , length : false }
 ) ;
 
 spec.test(
 	ava ,
-	[ [ "DummyHeapWithoutReferences" , partial( create , [ spec.DummyHeapWithoutReferences ] ) ] ] ,
+	[ [ "DummyHeapWithoutReferences (length: false)" , partial( create , [ spec.DummyHeapWithoutReferences ] ) ] ] ,
 	{ references : false , length : false }
 ) ;
