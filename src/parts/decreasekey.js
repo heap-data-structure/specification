@@ -7,30 +7,26 @@ export function _decreasekey ( _test, length, heapname, Heap, diffname, diff, n 
 
 	_test( title, t => {
 
-		var q, a, reference, references, i, x, b;
-
-		q = Heap( diff );
-		a = [];
-		b = [];
-		references = [];
+		const q = Heap( diff );
+		const pairs = [];
+		const b = [];
 
 		if (length) t.deepEqual( q.length, 0, "check length zero" );
 
-		i = n;
+		let i = n;
 		while ( i-- ) {
-			x = Math.random();
-			reference = q.push( x );
-			references.push( reference );
-			a.push( x );
-			if (length) t.deepEqual( q.length, a.length );
+			const x = Math.random();
+			const reference = q.push( x );
+			pairs.push( { ref: reference, value: x} );
+			if (length) t.deepEqual( q.length, pairs.length);
 		}
 
-		shuffle( references, 0, n );
+		shuffle( pairs, 0, n );
 
 		for ( i = 0 ; i < n ; ++i ) {
 
-			a[i] -= Math.random();
-			q.decreasekey( references[i], a[i] );
+			pairs[i].value -= Math.random();
+			q.decreasekey( pairs[i].ref, pairs[i].value );
 			if (length) t.deepEqual( q.length, n );
 
 		}
@@ -44,6 +40,7 @@ export function _decreasekey ( _test, length, heapname, Heap, diffname, diff, n 
 
 		}
 
+		const a = pairs.map(x => x.value);
 		a.sort( diff );
 
 		t.deepEqual( b, a, "check identical" );
