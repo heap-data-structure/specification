@@ -23,9 +23,11 @@ export function _decreasekey ( _test, length, heapname, Heap, diffname, diff, n 
 
 		shuffle( pairs, 0, n );
 
+		const order = diffname === 'increasing' ? 1 : -1;
+
 		for ( i = 0 ; i < n ; ++i ) {
 
-			pairs[i].value -= Math.random();
+			pairs[i].value -= Math.random() * order;
 			q.decreasekey( pairs[i].ref, pairs[i].value );
 			if (length) t.deepEqual( q.length, n );
 
