@@ -45,7 +45,6 @@ export function _decreasekey ( _test, length, heapname, Heap, diffname, diff, n 
 		}
 
 		a.sort( diff );
-		b.sort( diff );
 
 		t.deepEqual( b, a, "check identical" );
 
