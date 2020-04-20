@@ -26,7 +26,7 @@ export function _increasekey ( _test, length, heapname, Heap, diffname, diff, n 
 		for ( i = 0 ; i < n ; ++i ) {
 
 			pairs[i].value += Math.random();
-			q.decreasekey( pairs[i].ref, pairs[i].value );
+			q.increasekey( pairs[i].ref, pairs[i].value );
 			if (length) t.deepEqual( q.length, n );
 
 		}
