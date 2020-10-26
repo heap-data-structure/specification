@@ -1,4 +1,4 @@
-[js-heap-spec](http://aureooms.github.io/js-heap-spec)
+[@aureooms/js-heap-spec](https://aureooms.github.io/js-heap-spec)
 ==
 
 Heap specification library for JavaScript.
