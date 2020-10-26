@@ -1,7 +1,8 @@
-[@aureooms/js-heap-spec](https://aureooms.github.io/js-heap-spec)
+:mount_fuji: [@aureooms/js-heap-spec](https://aureooms.github.io/js-heap-spec)
 ==
 
 Heap specification library for JavaScript.
+See [docs](https://aureooms.github.io/js-heap-spec).
 Parent is [aureooms/js-heap](https://github.com/aureooms/js-heap).
 
 ```js
@@ -35,12 +36,13 @@ spec.test(
 
 This package contains a specification test suite for heap implementations such
 as
-[aureooms/js-d-ary-heap](https://github.com/aureooms/js-d-ary-heap),
-[aureooms/js-pairing-heap](https://github.com/aureooms/js-pairing-heap),
+[@aureooms/js-d-ary-heap](https://github.com/aureooms/js-d-ary-heap),
+[@aureooms/js-pairing-heap](https://github.com/aureooms/js-pairing-heap),
+[@aureooms/js-binomial-heap](https://github.com/aureooms/js-binomial-heap),
 and
-[aureooms/js-binomial-heap](https://github.com/aureooms/js-binomial-heap).
+[@aureooms/js-fibonacci-heap](https://github.com/aureooms/js-fibonacci-heap).
 
-## Binary and binomial heap reference
+## :scroll: Binary and binomial heap reference
 
   - http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf
   - http://stackoverflow.com/questions/6531543/efficient-implementation-of-binary-heaps
