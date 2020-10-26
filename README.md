@@ -6,13 +6,24 @@ See [docs](https://aureooms.github.io/js-heap-spec).
 Parent is [aureooms/js-heap](https://github.com/aureooms/js-heap).
 
 ```js
+// eslint-disable-next-line ava/use-test
 import ava from 'ava' ;
+import * as spec from '@aureooms/js-heap-spec' ;
+
 spec.test(
   ava ,
-  [ [ "DummyHeap" , compare => new spec.DummyHeap(compare) ] ] ,
+  [
+    [
+      "DummyHeap" , // Name for the implementation
+      compare => new spec.DummyHeap(compare) // Return an empty heap using `compare` to order priorities
+    ]
+  ] ,
   {
-    references : true ,
-    length : true ,
+    references : true , // Do the implementations maintain references?
+    length : true , // Do the implementations maintain a `length` property?
+    lengths : [[0], [1], [16], [17], [31], [32], [33], [63], [64], [65]] ,
+    lengths1 : [[0], [1], [16], [17], [31], [32], [33], [63], [64], [65]] , // for merge/meld test
+    lengths2 : [[0], [1], [16], [17], [31], [32], [33], [63], [64], [65]] ,  // for merge/meld test
   }
 ) ;
 ```
