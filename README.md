@@ -1,8 +1,8 @@
-:mount_fuji: [@aureooms/js-heap-spec](https://aureooms.github.io/js-heap-spec)
+:mount_fuji: [@aureooms/js-heap-spec](https://make-github-pseudonymous-again.github.io/js-heap-spec)
 ==
 
 Heap specification library for JavaScript.
-See [docs](https://aureooms.github.io/js-heap-spec).
+See [docs](https://make-github-pseudonymous-again.github.io/js-heap-spec).
 Parent is [aureooms/js-heap](https://github.com/aureooms/js-heap).
 
 ```js
@@ -40,7 +40,7 @@ spec.test(
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-heap-spec.svg)](https://codeclimate.com/github/aureooms/js-heap-spec/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-heap-spec/main.svg)](https://codecov.io/gh/aureooms/js-heap-spec)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-heap-spec.svg)](https://codeclimate.com/github/aureooms/js-heap-spec/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-heap-spec//badge.svg)](https://aureooms.github.io/js-heap-spec//source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-heap-spec//badge.svg)](https://make-github-pseudonymous-again.github.io/js-heap-spec//source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-heap-spec)](https://bundlephobia.com/result?p=@aureooms/js-heap-spec)
 
 ## Description
