@@ -30,7 +30,7 @@ spec.test(
 
 [![License](https://img.shields.io/github/license/heap-data-structure/specification.svg)](https://raw.githubusercontent.com/heap-data-structure/specification/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@heap-data-structure/specification.svg)](https://www.npmjs.org/package/@heap-data-structure/specification)
-[![Build](https://img.shields.io/travis/heap-data-structure/specification/main.svg)](https://travis-ci.org/heap-data-structure/specification/branches)
+[![Build](https://img.shields.io/travis/heap-data-structure/specification/main.svg)](https://travis-ci.com/heap-data-structure/specification/branches)
 [![Dependencies](https://img.shields.io/david/heap-data-structure/specification.svg)](https://david-dm.org/heap-data-structure/specification)
 [![Dev dependencies](https://img.shields.io/david/dev/heap-data-structure/specification.svg)](https://david-dm.org/heap-data-structure/specification?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/heap-data-structure/specification.svg)](https://github.com/heap-data-structure/specification/issues)
