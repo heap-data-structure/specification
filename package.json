@@ -123,7 +123,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/heap-data-structure/specification.git",
+    "url": "https://github.com/heap-data-structure/specification",
     "type": "git"
   },
   "scripts": {
