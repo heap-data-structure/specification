@@ -1,39 +1,33 @@
-import { tester } from '../tester.js' ;
+import {tester} from '../tester.js';
 
-export function _head ( _test, length, heapname, Heap, diffname, diff, n ) {
-
+export function _head(_test, length, heapname, makeHeap, diffname, diff, n) {
 	const title = `Heap head (${heapname}, ${diffname}, ${n})`;
 
-	_test( title, t => {
+	_test(title, (t) => {
+		const q = makeHeap(diff);
+		const a = [];
 
-		var q, a, i, x, b;
+		let i = n;
 
-		q = Heap( diff );
-		a = [];
-
-		i = n;
-
-		while ( i-- ) {
-			x = Math.random();
+		while (i--) {
+			const x = Math.random();
 			q.push(x);
 			a.push(x);
 		}
 
-		a.sort( diff );
+		a.sort(diff);
 
 		i = n;
-		b = [];
+		const b = [];
 
-		while ( i-- ) {
-			b.push( q.head() );
+		while (i--) {
+			b.push(q.head());
 			q.pop();
 		}
 
-		t.deepEqual( b, a, "check head sorted" );
-		t.deepEqual( q.head(), undefined, "check head empty" );
-
+		t.deepEqual(b, a, 'check head sorted');
+		t.deepEqual(q.head(), undefined, 'check head empty');
 	});
-
 }
 
-export const head = tester( _head ) ;
+export const head = tester(_head);
