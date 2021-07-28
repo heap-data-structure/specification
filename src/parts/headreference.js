@@ -1,4 +1,4 @@
-import { tester } from '../tester' ;
+import { tester } from '../tester.js' ;
 
 export function _headreference ( _test, length, heapname, Heap, diffname, diff, n ) {
 

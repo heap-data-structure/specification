@@ -1,4 +1,4 @@
-import { tester } from '../tester' ;
+import { tester } from '../tester.js' ;
 import { shuffle } from '@randomized/random' ;
 
 export function _update ( _test, length, heapname, Heap, diffname, diff, n ) {

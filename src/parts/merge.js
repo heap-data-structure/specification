@@ -1,4 +1,4 @@
-import { tester2 } from '../tester' ;
+import { tester2 } from '../tester.js' ;
 
 export function _merge ( _test, length, heapname, Heap, diffname, diff, m, n ) {
 

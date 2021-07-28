@@ -1,2 +1,2 @@
-export * from './DummyHeap' ;
-export * from './DummyHeapWithoutReferences' ;
+export * from './DummyHeap.js' ;
+export * from './DummyHeapWithoutReferences.js' ;

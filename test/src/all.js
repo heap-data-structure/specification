@@ -3,7 +3,7 @@ import ava from 'ava' ;
 
 import { partial , create } from '@functional-abstraction/functools' ;
 
-import * as spec from '../../src' ;
+import * as spec from '../../src/index.js' ;
 
 spec.test(
 	ava ,

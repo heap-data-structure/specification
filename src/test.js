@@ -10,7 +10,7 @@ import {
 	headreference ,
 	popreference ,
 	pushreference ,
-} from './parts' ;
+} from './parts/index.js' ;
 
 export function test ( _test , heaps , { references , length , lengths , lengths1 , lengths2 } = {
 	references : true ,
