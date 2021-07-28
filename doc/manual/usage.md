@@ -10,7 +10,7 @@ import 'regenerator-runtime/runtime' ;
 
 Then
 ```js
-const spec = require( '@aureooms/js-heap-spec' ) ;
+const spec = require( '@heap-data-structure/specification' ) ;
 // or
-import * as spec from '@aureooms/js-heap-spec' ;
+import * as spec from '@heap-data-structure/specification' ;
 ```

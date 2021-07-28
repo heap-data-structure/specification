@@ -1,14 +1,14 @@
-:mount_fuji: [@aureooms/js-heap-spec](https://make-github-pseudonymous-again.github.io/js-heap-spec)
+:mount_fuji: [@heap-data-structure/specification](https://heap-data-structure.github.io/specification)
 ==
 
 Heap specification library for JavaScript.
-See [docs](https://make-github-pseudonymous-again.github.io/js-heap-spec).
-Parent is [aureooms/js-heap](https://github.com/make-github-pseudonymous-again/js-heap).
+See [docs](https://heap-data-structure.github.io/specification).
+Parent is [@heap-data-structure](https://github.com/heap-data-structure/about).
 
 ```js
 // eslint-disable-next-line ava/use-test
 import ava from 'ava' ;
-import * as spec from '@aureooms/js-heap-spec' ;
+import * as spec from '@heap-data-structure/specification' ;
 
 spec.test(
   ava ,
@@ -28,30 +28,30 @@ spec.test(
 ) ;
 ```
 
-[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-heap-spec.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-heap-spec/main/LICENSE)
-[![Version](https://img.shields.io/npm/v/@aureooms/js-heap-spec.svg)](https://www.npmjs.org/package/@aureooms/js-heap-spec)
-[![Build](https://img.shields.io/travis/make-github-pseudonymous-again/js-heap-spec/main.svg)](https://travis-ci.org/make-github-pseudonymous-again/js-heap-spec/branches)
-[![Dependencies](https://img.shields.io/david/make-github-pseudonymous-again/js-heap-spec.svg)](https://david-dm.org/make-github-pseudonymous-again/js-heap-spec)
-[![Dev dependencies](https://img.shields.io/david/dev/make-github-pseudonymous-again/js-heap-spec.svg)](https://david-dm.org/make-github-pseudonymous-again/js-heap-spec?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-heap-spec.svg)](https://github.com/make-github-pseudonymous-again/js-heap-spec/issues)
-[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-heap-spec.svg)](https://www.npmjs.org/package/@aureooms/js-heap-spec)
+[![License](https://img.shields.io/github/license/heap-data-structure/specification.svg)](https://raw.githubusercontent.com/heap-data-structure/specification/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@heap-data-structure/specification.svg)](https://www.npmjs.org/package/@heap-data-structure/specification)
+[![Build](https://img.shields.io/travis/heap-data-structure/specification/main.svg)](https://travis-ci.org/heap-data-structure/specification/branches)
+[![Dependencies](https://img.shields.io/david/heap-data-structure/specification.svg)](https://david-dm.org/heap-data-structure/specification)
+[![Dev dependencies](https://img.shields.io/david/dev/heap-data-structure/specification.svg)](https://david-dm.org/heap-data-structure/specification?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/heap-data-structure/specification.svg)](https://github.com/heap-data-structure/specification/issues)
+[![Downloads](https://img.shields.io/npm/dm/@heap-data-structure/specification.svg)](https://www.npmjs.org/package/@heap-data-structure/specification)
 
-[![Code issues](https://img.shields.io/codeclimate/issues/make-github-pseudonymous-again/js-heap-spec.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-heap-spec/issues)
-[![Code maintainability](https://img.shields.io/codeclimate/maintainability/make-github-pseudonymous-again/js-heap-spec.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-heap-spec/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/make-github-pseudonymous-again/js-heap-spec/main.svg)](https://codecov.io/gh/make-github-pseudonymous-again/js-heap-spec)
-[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/make-github-pseudonymous-again/js-heap-spec.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-heap-spec/trends/technical_debt)
-[![Documentation](https://make-github-pseudonymous-again.github.io/js-heap-spec//badge.svg)](https://make-github-pseudonymous-again.github.io/js-heap-spec//source.html)
-[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-heap-spec)](https://bundlephobia.com/result?p=@aureooms/js-heap-spec)
+[![Code issues](https://img.shields.io/codeclimate/issues/heap-data-structure/specification.svg)](https://codeclimate.com/github/heap-data-structure/specification/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/heap-data-structure/specification.svg)](https://codeclimate.com/github/heap-data-structure/specification/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/heap-data-structure/specification/main.svg)](https://codecov.io/gh/heap-data-structure/specification)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/heap-data-structure/specification.svg)](https://codeclimate.com/github/heap-data-structure/specification/trends/technical_debt)
+[![Documentation](https://heap-data-structure.github.io/specification/badge.svg)](https://heap-data-structure.github.io/specification/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@heap-data-structure/specification)](https://bundlephobia.com/result?p=@heap-data-structure/specification)
 
 ## Description
 
 This package contains a specification test suite for heap implementations such
 as
-[@aureooms/js-d-ary-heap](https://github.com/make-github-pseudonymous-again/js-d-ary-heap),
-[@aureooms/js-pairing-heap](https://github.com/make-github-pseudonymous-again/js-pairing-heap),
-[@aureooms/js-binomial-heap](https://github.com/make-github-pseudonymous-again/js-binomial-heap),
+[@heap-data-structure/d-ary-heap](https://github.com/heap-data-structure/d-ary-heap),
+[@heap-data-structure/pairing-heap](https://github.com/heap-data-structure/pairing-heap),
+[@heap-data-structure/binomial-heap](https://github.com/heap-data-structure/binomial-heap),
 and
-[@aureooms/js-fibonacci-heap](https://github.com/make-github-pseudonymous-again/js-fibonacci-heap).
+[@heap-data-structure/fibonacci-heap](https://github.com/heap-data-structure/fibonacci-heap).
 
 ## :scroll: Binary and binomial heap reference
 

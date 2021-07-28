@@ -1,7 +1,7 @@
 
 import ava from 'ava' ;
 
-import { partial , create } from '@aureooms/js-functools' ;
+import { partial , create } from '@functional-abstraction/functools' ;
 
 import * as spec from '../../src' ;
 

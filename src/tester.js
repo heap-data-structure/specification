@@ -1,6 +1,10 @@
-import { increasing , decreasing } from '@aureooms/js-compare' ;
-import { map , chain , list , product , exhaust } from '@aureooms/js-itertools' ;
-import functools from '@aureooms/js-functools' ;
+import { increasing , decreasing } from '@total-order/primitive';
+import {map} from '@iterable-iterator/map';
+import {_chain as chain} from '@iterable-iterator/chain';
+import {list} from '@iterable-iterator/list';
+import {exhaust} from '@iterable-iterator/consume';
+import {product} from '@set-theory/cartesian-product';
+import {chain as fchain, partial, star} from '@functional-abstraction/functools' ;
 
 const DEFAULT_LENGTHS = [[0], [1], [16], [17], [31], [32], [33], [63], [64], [65]] ;
 
@@ -11,7 +15,7 @@ export function tester ( method ) {
 		if ( lengths === undefined ) lengths = DEFAULT_LENGTHS ;
 
 		exhaust( map(
-			functools.chain( [ chain , list , functools.partial( functools.star , [ method ] ) ] ) ,
+			fchain( [ chain , list , partial( star , [ method ] ) ] ) ,
 			product( [
 
 				[[_test, length]] ,
@@ -39,7 +43,7 @@ export function tester2 ( method ) {
 		if ( lengths2 === undefined ) lengths2 = lengths1 ;
 
 		exhaust( map(
-			functools.chain( [ chain , list , functools.partial( functools.star , [ method ] ) ] ) ,
+			fchain( [ chain , list , partial( star , [ method ] ) ] ) ,
 			product( [
 
 				[[_test, length]] ,

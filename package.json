@@ -1,8 +1,8 @@
 {
-  "name": "@aureooms/js-heap-spec",
+  "name": "@heap-data-structure/specification",
   "description": "Heap specification code bricks for JavaScript",
   "version": "15.0.3",
-  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
+  "author": "make-github-pseudonymous-again",
   "ava": {
     "files": [
       "test/src/**/*"
@@ -74,13 +74,17 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-heap-spec/issues"
+    "url": "https://github.com/heap-data-structure/specification/issues"
   },
   "dependencies": {
-    "@aureooms/js-compare": "^1.4.8",
-    "@aureooms/js-functools": "^2.0.3",
-    "@aureooms/js-itertools": "^5.0.0",
-    "@aureooms/js-random": "^2.0.0"
+    "@functional-abstraction/functools": "^3.0.2",
+    "@iterable-iterator/chain": "^2.0.1",
+    "@iterable-iterator/consume": "^1.0.1",
+    "@iterable-iterator/list": "^1.0.1",
+    "@iterable-iterator/map": "^1.0.1",
+    "@randomized/random": "^4.0.0",
+    "@set-theory/cartesian-product": "^2.0.1",
+    "@total-order/primitive": "^1.0.1"
   },
   "devDependencies": {
     "@babel/cli": "7.13.10",
@@ -106,7 +110,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "http://make-github-pseudonymous-again.github.io/js-heap-spec/",
+  "homepage": "http://heap-data-structure.github.io/specification",
   "keywords": [
     "bricks",
     "ender",
@@ -118,7 +122,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-heap-spec.git",
+    "url": "https://github.com/heap-data-structure/specification.git",
     "type": "git"
   },
   "scripts": {
