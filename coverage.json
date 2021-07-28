@@ -1,20 +1,34 @@
 {
   "coverage": "0%",
-  "expectCount": 25,
+  "expectCount": 40,
   "actualCount": 0,
   "files": {
     "src/adt/DummyHeap.js": {
-      "expectCount": 1,
+      "expectCount": 11,
       "actualCount": 0,
       "undocumentLines": [
-        3
+        1,
+        10,
+        14,
+        20,
+        26,
+        33,
+        40,
+        48,
+        56,
+        62,
+        72
       ]
     },
     "src/adt/DummyHeapWithoutReferences.js": {
-      "expectCount": 1,
+      "expectCount": 5,
       "actualCount": 0,
       "undocumentLines": [
-        3
+        1,
+        7,
+        13,
+        20,
+        28
       ]
     },
     "src/parts/decreasekey.js": {
@@ -22,7 +36,7 @@
       "actualCount": 0,
       "undocumentLines": [
         4,
-        63
+        61
       ]
     },
     "src/parts/delete.js": {
@@ -30,7 +44,7 @@
       "actualCount": 0,
       "undocumentLines": [
         4,
-        61
+        51
       ]
     },
     "src/parts/head.js": {
@@ -38,7 +52,7 @@
       "actualCount": 0,
       "undocumentLines": [
         3,
-        39
+        33
       ]
     },
     "src/parts/headreference.js": {
@@ -46,7 +60,7 @@
       "actualCount": 0,
       "undocumentLines": [
         3,
-        38
+        40
       ]
     },
     "src/parts/increasekey.js": {
@@ -54,7 +68,7 @@
       "actualCount": 0,
       "undocumentLines": [
         4,
-        63
+        61
       ]
     },
     "src/parts/merge.js": {
@@ -62,7 +76,7 @@
       "actualCount": 0,
       "undocumentLines": [
         3,
-        62
+        65
       ]
     },
     "src/parts/popreference.js": {
@@ -70,7 +84,7 @@
       "actualCount": 0,
       "undocumentLines": [
         3,
-        44
+        46
       ]
     },
     "src/parts/pushpop.js": {
@@ -78,7 +92,7 @@
       "actualCount": 0,
       "undocumentLines": [
         3,
-        44
+        38
       ]
     },
     "src/parts/pushreference.js": {
@@ -86,7 +100,7 @@
       "actualCount": 0,
       "undocumentLines": [
         4,
-        59
+        61
       ]
     },
     "src/parts/update.js": {
@@ -94,22 +108,23 @@
       "actualCount": 0,
       "undocumentLines": [
         4,
-        66
+        55
       ]
     },
     "src/test.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        15
+        14
       ]
     },
     "src/tester.js": {
-      "expectCount": 2,
+      "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
-        5,
-        30
+        13,
+        26,
+        53
       ]
     }
   }

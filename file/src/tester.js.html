@@ -3,16 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">src/tester.js | aureooms/js-heap-spec API Document</title>
+  <title data-ice="title">src/tester.js | @heap-data-structure/specification</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
-  
-  
   <script src="script/manual.js"></script>
-<script data-ice="userScript" src="user/script/0-header.js"></script>
-<link data-ice="userStyle" rel="stylesheet" href="user/css/0-style.css">
-</head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Heap specification code bricks for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@heap-data-structure/specification"><meta property="twitter:description" content="Heap specification code bricks for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -20,8 +16,7 @@
   <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
-  <a href="test.html" data-ice="testLink">Test</a>
-  <a data-ice="repoURL" href="https://github.com/aureooms/js-heap-spec.git" class="repo-url-github">Repository</a>
+  
   <div class="search-box">
   <span>
     <img src="./image/search.png">
@@ -29,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-</header>
+<a style="position:relative; top:3px;" href="https://github.com/heap-data-structure/specification"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -37,9 +32,9 @@
   <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-test">test</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester">tester</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester2">tester2</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">adt</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adt">adt</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeapWithoutReferences">DummyHeapWithoutReferences</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">parts</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#parts">parts</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_del">_del</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_head">_head</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_headreference">_headreference</a></span></span></li>
@@ -64,66 +59,92 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/tester.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { increasing , decreasing } from &apos;aureooms-js-compare&apos; ;
-import { map , chain , list , product , exhaust } from &apos;aureooms-js-itertools&apos; ;
-import functools from &apos;aureooms-js-functools&apos; ;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import {increasing, decreasing} from &apos;@total-order/primitive&apos;;
+import {map} from &apos;@iterable-iterator/map&apos;;
+import {_chain as chain} from &apos;@iterable-iterator/chain&apos;;
+import {list} from &apos;@iterable-iterator/list&apos;;
+import {exhaust} from &apos;@iterable-iterator/consume&apos;;
+import {product} from &apos;@set-theory/cartesian-product&apos;;
+import {
+	chain as fchain,
+	partial,
+	star,
+} from &apos;@functional-abstraction/functools&apos;;
 
-export function tester ( method ) {
+const DEFAULT_LENGTHS = [
+	[0],
+	[1],
+	[16],
+	[17],
+	[31],
+	[32],
+	[33],
+	[63],
+	[64],
+	[65],
+];
 
-	return function( _test , length , heaps ) {
+export function tester(method) {
+	return function (_test, length, heaps, lengths) {
+		if (lengths === undefined) lengths = DEFAULT_LENGTHS;
 
-		exhaust( map(
-			functools.chain( [ chain , list , functools.partial( functools.star , [ method ] ) ] ) ,
-			product( [
+		exhaust(
+			map(
+				fchain([chain, list, partial(star, [method])]),
+				product(
+					[
+						[[_test, length]],
 
-				[[_test, length]] ,
+						heaps,
 
-				heaps ,
+						[
+							[&apos;increasing&apos;, increasing],
+							[&apos;decreasing&apos;, decreasing],
+						],
 
-				[
-					[&quot;increasing&quot;, increasing],
-					[&quot;decreasing&quot;, decreasing]
-				],
-
-				[[1], [16], [17], [31], [32], [33], [63], [64], [65]]
-
-			], 1 )
-		) ) ;
-
-	} ;
+						lengths,
+					],
+					1,
+				),
+			),
+		);
+	};
 }
 
-export function tester2 ( method ) {
+export function tester2(method) {
+	return function (_test, length, heaps, lengths1, lengths2) {
+		if (lengths1 === undefined) lengths1 = DEFAULT_LENGTHS;
+		if (lengths2 === undefined) lengths2 = lengths1;
 
-	return function( _test , length , heaps ) {
+		exhaust(
+			map(
+				fchain([chain, list, partial(star, [method])]),
+				product(
+					[
+						[[_test, length]],
 
-		exhaust( map(
-			functools.chain( [ chain , list , functools.partial( functools.star , [ method ] ) ] ) ,
-			product( [
+						heaps,
 
-				[[_test, length]] ,
+						[
+							[&apos;increasing&apos;, increasing],
+							[&apos;decreasing&apos;, decreasing],
+						],
 
-				heaps ,
-
-				[
-					[&quot;increasing&quot;, increasing],
-					[&quot;decreasing&quot;, decreasing]
-				],
-
-				[[1], [16], [17], [31], [32], [33], [63], [64], [65]],
-				[[1], [16], [17], [31], [32], [33], [63], [64], [65]]
-
-			], 1 )
-		) ) ;
-
-	} ;
+						lengths1,
+						lengths2,
+					],
+					1,
+				),
+			),
+		);
+	};
 }
 </code></pre>
 
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>

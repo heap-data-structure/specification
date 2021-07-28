@@ -3,16 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../">
-  <title data-ice="title">Function | aureooms/js-heap-spec API Document</title>
+  <title data-ice="title">Function | @heap-data-structure/specification</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
-  
-  
   <script src="script/manual.js"></script>
-<script data-ice="userScript" src="user/script/0-header.js"></script>
-<link data-ice="userStyle" rel="stylesheet" href="user/css/0-style.css">
-</head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Heap specification code bricks for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@heap-data-structure/specification"><meta property="twitter:description" content="Heap specification code bricks for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -20,8 +16,7 @@
   <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
-  <a href="test.html" data-ice="testLink">Test</a>
-  <a data-ice="repoURL" href="https://github.com/aureooms/js-heap-spec.git" class="repo-url-github">Repository</a>
+  
   <div class="search-box">
   <span>
     <img src="./image/search.png">
@@ -29,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-</header>
+<a style="position:relative; top:3px;" href="https://github.com/heap-data-structure/specification"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -37,9 +32,9 @@
   <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-test">test</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester">tester</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester2">tester2</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">adt</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adt">adt</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeapWithoutReferences">DummyHeapWithoutReferences</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">parts</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#parts">parts</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_del">_del</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_head">_head</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_headreference">_headreference</a></span></span></li>
@@ -81,7 +76,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span><span data-ice="signature">(compare: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span><span class="code" data-ice="signature">(compare: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -108,7 +104,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-DummyHeapWithoutReferences">DummyHeapWithoutReferences</a></span></span><span data-ice="signature">(compare: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-DummyHeapWithoutReferences">DummyHeapWithoutReferences</a></span></span><span class="code" data-ice="signature">(compare: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -135,7 +132,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-test">test</a></span></span><span data-ice="signature">(_test: <span>*</span>, heaps: <span>*</span>, objectPattern2: {&quot;references&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>, &quot;length&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>})</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-test">test</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, heaps: <span>*</span>, objectPattern2: {&quot;references&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>, &quot;length&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>, &quot;lengths&quot;: <span>*</span>, &quot;lengths1&quot;: <span>*</span>, &quot;lengths2&quot;: <span>*</span>})</span>
         </p>
       </div>
       <div>
@@ -162,7 +160,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-tester">tester</a></span></span><span data-ice="signature">(method: <span>*</span>): <span>*</span></span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-tester">tester</a></span></span><span class="code" data-ice="signature">(method: <span>*</span>): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -189,7 +188,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-tester2">tester2</a></span></span><span data-ice="signature">(method: <span>*</span>): <span>*</span></span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-tester2">tester2</a></span></span><span class="code" data-ice="signature">(method: <span>*</span>): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -222,7 +222,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -249,7 +250,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_del">_del</a></span></span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_del">_del</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -276,7 +278,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_head">_head</a></span></span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_head">_head</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -303,7 +306,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_headreference">_headreference</a></span></span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_headreference">_headreference</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -330,7 +334,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_increasekey">_increasekey</a></span></span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_increasekey">_increasekey</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -357,7 +362,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_merge">_merge</a></span></span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, m: <span>*</span>, n: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_merge">_merge</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, m: <span>*</span>, n: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -384,7 +390,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_popreference">_popreference</a></span></span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_popreference">_popreference</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -411,7 +418,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_pushpop">_pushpop</a></span></span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_pushpop">_pushpop</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -438,7 +446,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_pushreference">_pushreference</a></span></span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_pushreference">_pushreference</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -465,7 +474,8 @@
         <p>
           
           
-          <span data-ice="name"><span><a href="function/index.html#static-function-_update">_update</a></span></span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+          
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-_update">_update</a></span></span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
         </p>
       </div>
       <div>
@@ -492,15 +502,15 @@
     
     
     
-    <span data-ice="name">DummyHeap</span><span data-ice="signature">(compare: <span>*</span>)</span>
+    <span class="code" data-ice="name">DummyHeap</span><span class="code" data-ice="signature">(compare: <span>*</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/adt/DummyHeap.js.html#lineNumber3">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/adt/DummyHeap.js.html#lineNumber1">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {DummyHeap} from &apos;<span><a href="file/src/adt/DummyHeap.js.html#lineNumber3">aureooms-js-heap-spec/src/adt/DummyHeap.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {DummyHeap} from &apos;<span><a href="file/src/adt/DummyHeap.js.html#lineNumber1">@heap-data-structure/specification/src/adt/DummyHeap.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -516,8 +526,8 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">compare</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">compare</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -551,15 +561,15 @@
     
     
     
-    <span data-ice="name">DummyHeapWithoutReferences</span><span data-ice="signature">(compare: <span>*</span>)</span>
+    <span class="code" data-ice="name">DummyHeapWithoutReferences</span><span class="code" data-ice="signature">(compare: <span>*</span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/adt/DummyHeapWithoutReferences.js.html#lineNumber3">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/adt/DummyHeapWithoutReferences.js.html#lineNumber1">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {DummyHeapWithoutReferences} from &apos;<span><a href="file/src/adt/DummyHeapWithoutReferences.js.html#lineNumber3">aureooms-js-heap-spec/src/adt/DummyHeapWithoutReferences.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {DummyHeapWithoutReferences} from &apos;<span><a href="file/src/adt/DummyHeapWithoutReferences.js.html#lineNumber1">@heap-data-structure/specification/src/adt/DummyHeapWithoutReferences.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -575,8 +585,8 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">compare</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">compare</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -610,15 +620,15 @@
     
     
     
-    <span data-ice="name">test</span><span data-ice="signature">(_test: <span>*</span>, heaps: <span>*</span>, objectPattern2: {&quot;references&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>, &quot;length&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>})</span>
+    <span class="code" data-ice="name">test</span><span class="code" data-ice="signature">(_test: <span>*</span>, heaps: <span>*</span>, objectPattern2: {&quot;references&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>, &quot;length&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>, &quot;lengths&quot;: <span>*</span>, &quot;lengths1&quot;: <span>*</span>, &quot;lengths2&quot;: <span>*</span>})</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/test.js.html#lineNumber15">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/test.js.html#lineNumber14">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {test} from &apos;<span><a href="file/src/test.js.html#lineNumber15">aureooms-js-heap-spec/src/test.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {test} from &apos;<span><a href="file/src/test.js.html#lineNumber14">@heap-data-structure/specification/src/test.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -634,20 +644,20 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heaps</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heaps</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">objectPattern2</td>
-      <td data-ice="type">{&quot;references&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>, &quot;length&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>}</td>
+      <td data-ice="name" class="code" data-depth="0">objectPattern2</td>
+      <td data-ice="type" class="code">{&quot;references&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>, &quot;length&quot;: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>, &quot;lengths&quot;: <span>*</span>, &quot;lengths1&quot;: <span>*</span>, &quot;lengths2&quot;: <span>*</span>}</td>
       <td data-ice="appendix"><ul><li>optional</li>
 <li>default: {&quot;references&quot;:true,&quot;length&quot;:false}</li></ul></td>
       <td data-ice="description"></td>
@@ -682,15 +692,15 @@
     
     
     
-    <span data-ice="name">tester</span><span data-ice="signature">(method: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">tester</span><span class="code" data-ice="signature">(method: <span>*</span>): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/tester.js.html#lineNumber5">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/tester.js.html#lineNumber26">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {tester} from &apos;<span><a href="file/src/tester.js.html#lineNumber5">aureooms-js-heap-spec/src/tester.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {tester} from &apos;<span><a href="file/src/tester.js.html#lineNumber26">@heap-data-structure/specification/src/tester.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -706,8 +716,8 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">method</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">method</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -721,7 +731,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
           
         </tr>
       </tbody>
@@ -753,15 +763,15 @@
     
     
     
-    <span data-ice="name">tester2</span><span data-ice="signature">(method: <span>*</span>): <span>*</span></span>
+    <span class="code" data-ice="name">tester2</span><span class="code" data-ice="signature">(method: <span>*</span>): <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/tester.js.html#lineNumber30">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/tester.js.html#lineNumber53">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {tester2} from &apos;<span><a href="file/src/tester.js.html#lineNumber30">aureooms-js-heap-spec/src/tester.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {tester2} from &apos;<span><a href="file/src/tester.js.html#lineNumber53">@heap-data-structure/specification/src/tester.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -777,8 +787,8 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">method</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">method</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -792,7 +802,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span>*</span></td>
           
         </tr>
       </tbody>
@@ -826,7 +836,7 @@
     
     
     
-    <span data-ice="name">_decreasekey</span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+    <span class="code" data-ice="name">_decreasekey</span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
     <span class="right-info">
       
       
@@ -834,7 +844,7 @@
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_decreasekey} from &apos;<span><a href="file/src/parts/decreasekey.js.html#lineNumber4">aureooms-js-heap-spec/src/parts/decreasekey.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_decreasekey} from &apos;<span><a href="file/src/parts/decreasekey.js.html#lineNumber4">@heap-data-structure/specification/src/parts/decreasekey.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -850,44 +860,44 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">length</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">length</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heapname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heapname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">Heap</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">makeHeap</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diffname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diffname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diff</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diff</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -921,7 +931,7 @@
     
     
     
-    <span data-ice="name">_del</span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+    <span class="code" data-ice="name">_del</span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
     <span class="right-info">
       
       
@@ -929,7 +939,7 @@
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_del} from &apos;<span><a href="file/src/parts/delete.js.html#lineNumber4">aureooms-js-heap-spec/src/parts/delete.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_del} from &apos;<span><a href="file/src/parts/delete.js.html#lineNumber4">@heap-data-structure/specification/src/parts/delete.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -945,44 +955,44 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">length</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">length</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heapname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heapname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">Heap</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">makeHeap</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diffname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diffname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diff</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diff</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1016,7 +1026,7 @@
     
     
     
-    <span data-ice="name">_head</span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+    <span class="code" data-ice="name">_head</span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
     <span class="right-info">
       
       
@@ -1024,7 +1034,7 @@
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_head} from &apos;<span><a href="file/src/parts/head.js.html#lineNumber3">aureooms-js-heap-spec/src/parts/head.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_head} from &apos;<span><a href="file/src/parts/head.js.html#lineNumber3">@heap-data-structure/specification/src/parts/head.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -1040,44 +1050,44 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">length</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">length</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heapname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heapname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">Heap</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">makeHeap</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diffname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diffname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diff</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diff</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1111,7 +1121,7 @@
     
     
     
-    <span data-ice="name">_headreference</span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+    <span class="code" data-ice="name">_headreference</span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
     <span class="right-info">
       
       
@@ -1119,7 +1129,7 @@
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_headreference} from &apos;<span><a href="file/src/parts/headreference.js.html#lineNumber3">aureooms-js-heap-spec/src/parts/headreference.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_headreference} from &apos;<span><a href="file/src/parts/headreference.js.html#lineNumber3">@heap-data-structure/specification/src/parts/headreference.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -1135,44 +1145,44 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">length</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">length</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heapname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heapname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">Heap</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">makeHeap</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diffname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diffname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diff</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diff</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1206,7 +1216,7 @@
     
     
     
-    <span data-ice="name">_increasekey</span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+    <span class="code" data-ice="name">_increasekey</span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
     <span class="right-info">
       
       
@@ -1214,7 +1224,7 @@
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_increasekey} from &apos;<span><a href="file/src/parts/increasekey.js.html#lineNumber4">aureooms-js-heap-spec/src/parts/increasekey.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_increasekey} from &apos;<span><a href="file/src/parts/increasekey.js.html#lineNumber4">@heap-data-structure/specification/src/parts/increasekey.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -1230,44 +1240,44 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">length</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">length</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heapname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heapname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">Heap</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">makeHeap</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diffname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diffname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diff</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diff</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1301,7 +1311,7 @@
     
     
     
-    <span data-ice="name">_merge</span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, m: <span>*</span>, n: <span>*</span>)</span>
+    <span class="code" data-ice="name">_merge</span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, m: <span>*</span>, n: <span>*</span>)</span>
     <span class="right-info">
       
       
@@ -1309,7 +1319,7 @@
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_merge} from &apos;<span><a href="file/src/parts/merge.js.html#lineNumber3">aureooms-js-heap-spec/src/parts/merge.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_merge} from &apos;<span><a href="file/src/parts/merge.js.html#lineNumber3">@heap-data-structure/specification/src/parts/merge.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -1325,50 +1335,50 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">length</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">length</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heapname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heapname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">Heap</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">makeHeap</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diffname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diffname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diff</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diff</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">m</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">m</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1402,7 +1412,7 @@
     
     
     
-    <span data-ice="name">_popreference</span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+    <span class="code" data-ice="name">_popreference</span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
     <span class="right-info">
       
       
@@ -1410,7 +1420,7 @@
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_popreference} from &apos;<span><a href="file/src/parts/popreference.js.html#lineNumber3">aureooms-js-heap-spec/src/parts/popreference.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_popreference} from &apos;<span><a href="file/src/parts/popreference.js.html#lineNumber3">@heap-data-structure/specification/src/parts/popreference.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -1426,44 +1436,44 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">length</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">length</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heapname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heapname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">Heap</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">makeHeap</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diffname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diffname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diff</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diff</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1497,7 +1507,7 @@
     
     
     
-    <span data-ice="name">_pushpop</span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+    <span class="code" data-ice="name">_pushpop</span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
     <span class="right-info">
       
       
@@ -1505,7 +1515,7 @@
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_pushpop} from &apos;<span><a href="file/src/parts/pushpop.js.html#lineNumber3">aureooms-js-heap-spec/src/parts/pushpop.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_pushpop} from &apos;<span><a href="file/src/parts/pushpop.js.html#lineNumber3">@heap-data-structure/specification/src/parts/pushpop.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -1521,44 +1531,44 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">length</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">length</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heapname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heapname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">Heap</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">makeHeap</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diffname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diffname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diff</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diff</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1592,7 +1602,7 @@
     
     
     
-    <span data-ice="name">_pushreference</span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+    <span class="code" data-ice="name">_pushreference</span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
     <span class="right-info">
       
       
@@ -1600,7 +1610,7 @@
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_pushreference} from &apos;<span><a href="file/src/parts/pushreference.js.html#lineNumber4">aureooms-js-heap-spec/src/parts/pushreference.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_pushreference} from &apos;<span><a href="file/src/parts/pushreference.js.html#lineNumber4">@heap-data-structure/specification/src/parts/pushreference.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -1616,44 +1626,44 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">length</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">length</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heapname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heapname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">Heap</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">makeHeap</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diffname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diffname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diff</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diff</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1687,7 +1697,7 @@
     
     
     
-    <span data-ice="name">_update</span><span data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, Heap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
+    <span class="code" data-ice="name">_update</span><span class="code" data-ice="signature">(_test: <span>*</span>, length: <span>*</span>, heapname: <span>*</span>, makeHeap: <span>*</span>, diffname: <span>*</span>, diff: <span>*</span>, n: <span>*</span>)</span>
     <span class="right-info">
       
       
@@ -1695,7 +1705,7 @@
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_update} from &apos;<span><a href="file/src/parts/update.js.html#lineNumber4">aureooms-js-heap-spec/src/parts/update.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {_update} from &apos;<span><a href="file/src/parts/update.js.html#lineNumber4">@heap-data-structure/specification/src/parts/update.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -1711,44 +1721,44 @@
     <tbody>
     
     <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">_test</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">_test</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">length</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">length</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">heapname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">heapname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">Heap</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">makeHeap</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diffname</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diffname</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">diff</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">diff</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" data-depth="0">n</td>
-      <td data-ice="type"><span>*</span></td>
+      <td data-ice="name" class="code" data-depth="0">n</td>
+      <td data-ice="type" class="code"><span>*</span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -1778,7 +1788,7 @@
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>

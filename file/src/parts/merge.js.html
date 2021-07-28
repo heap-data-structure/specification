@@ -3,16 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/parts/merge.js | aureooms/js-heap-spec API Document</title>
+  <title data-ice="title">src/parts/merge.js | @heap-data-structure/specification</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
-  
-  
   <script src="script/manual.js"></script>
-<script data-ice="userScript" src="user/script/0-header.js"></script>
-<link data-ice="userStyle" rel="stylesheet" href="user/css/0-style.css">
-</head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Heap specification code bricks for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@heap-data-structure/specification"><meta property="twitter:description" content="Heap specification code bricks for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -20,8 +16,7 @@
   <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
-  <a href="test.html" data-ice="testLink">Test</a>
-  <a data-ice="repoURL" href="https://github.com/aureooms/js-heap-spec.git" class="repo-url-github">Repository</a>
+  
   <div class="search-box">
   <span>
     <img src="./image/search.png">
@@ -29,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-</header>
+<a style="position:relative; top:3px;" href="https://github.com/heap-data-structure/specification"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -37,9 +32,9 @@
   <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-test">test</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester">tester</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester2">tester2</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">adt</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adt">adt</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeapWithoutReferences">DummyHeapWithoutReferences</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">parts</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#parts">parts</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_del">_del</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_head">_head</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_headreference">_headreference</a></span></span></li>
@@ -64,74 +59,77 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/parts/merge.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { tester2 } from &apos;../tester&apos; ;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import {tester2} from &apos;../tester.js&apos;;
 
-export function _merge ( _test, length, heapname, Heap, diffname, diff, m, n ) {
-
+export function _merge(
+	_test,
+	length,
+	heapname,
+	makeHeap,
+	diffname,
+	diff,
+	m,
+	n,
+) {
 	const title = `Heap merge (${heapname}, ${diffname}, ${m}, ${n})`;
 
-	_test( title, t =&gt; {
+	_test(title, (t) =&gt; {
+		const a = [];
+		const q = makeHeap(diff);
+		const q1 = makeHeap(diff);
+		const q2 = makeHeap(diff);
 
-		var q, q1, q2, a, x, i, b;
+		if (length) t.deepEqual(q1.length, 0, &apos;check length zero q1&apos;);
+		if (length) t.deepEqual(q2.length, 0, &apos;check length zero q2&apos;);
 
-		a = [];
-		q = Heap( diff );
-		q1 = Heap( diff );
-		q2 = Heap( diff );
+		t.deepEqual(q.pop(), undefined, &apos;1st empty pop&apos;);
 
-		if (length) t.deepEqual( q1.length, 0, &quot;check length zero q1&quot; );
-		if (length) t.deepEqual( q2.length, 0, &quot;check length zero q2&quot; );
-
-		t.deepEqual( q.pop(), undefined, &quot;1st empty pop&quot; );
-
-		i = m;
-		while ( i-- ) {
-			x = Math.random();
+		let i = m;
+		while (i--) {
+			const x = Math.random();
 			q1.push(x);
 			a.push(x);
-			if (length) t.deepEqual( q1.length, a.length );
+			if (length) t.deepEqual(q1.length, a.length);
 		}
 
 		i = n;
-		while ( i-- ) {
-			x = Math.random();
+		while (i--) {
+			const x = Math.random();
 			q2.push(x);
 			a.push(x);
-			if (length) t.deepEqual( q2.length, a.length - m );
+			if (length) t.deepEqual(q2.length, a.length - m);
 		}
 
-		a.sort( diff );
+		a.sort(diff);
 
-		q.merge( q1 );
-		q.merge( q2 );
+		q.merge(q1);
+		q.merge(q2);
 
 		i = m + n;
-		b = [];
+		const b = [];
 
-		if (length) t.deepEqual( q.length, i );
+		if (length) t.deepEqual(q.length, i);
 
-		while ( i-- ) {
-			b.push( q.pop() );
-			if (length) t.deepEqual( q.length, i );
+		while (i--) {
+			b.push(q.pop());
+			if (length) t.deepEqual(q.length, i);
 		}
 
-		t.deepEqual( b, a, &quot;check sorted&quot; );
+		t.deepEqual(b, a, &apos;check sorted&apos;);
 
-		t.deepEqual( q.pop(), undefined, &quot;2nd empty pop&quot; );
+		t.deepEqual(q.pop(), undefined, &apos;2nd empty pop&apos;);
 
-		if (length) t.deepEqual( q.length, 0, &quot;check length zero q&quot; );
-
+		if (length) t.deepEqual(q.length, 0, &apos;check length zero q&apos;);
 	});
-
 }
 
-export const merge = tester2( _merge ) ;
+export const merge = tester2(_merge);
 </code></pre>
 
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>

@@ -3,16 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/parts/increasekey.js | aureooms/js-heap-spec API Document</title>
+  <title data-ice="title">src/parts/increasekey.js | @heap-data-structure/specification</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
-  
-  
   <script src="script/manual.js"></script>
-<script data-ice="userScript" src="user/script/0-header.js"></script>
-<link data-ice="userStyle" rel="stylesheet" href="user/css/0-style.css">
-</head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Heap specification code bricks for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@heap-data-structure/specification"><meta property="twitter:description" content="Heap specification code bricks for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -20,8 +16,7 @@
   <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
-  <a href="test.html" data-ice="testLink">Test</a>
-  <a data-ice="repoURL" href="https://github.com/aureooms/js-heap-spec.git" class="repo-url-github">Repository</a>
+  
   <div class="search-box">
   <span>
     <img src="./image/search.png">
@@ -29,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-</header>
+<a style="position:relative; top:3px;" href="https://github.com/heap-data-structure/specification"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -37,9 +32,9 @@
   <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-test">test</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester">tester</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester2">tester2</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">adt</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adt">adt</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeapWithoutReferences">DummyHeapWithoutReferences</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">parts</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#parts">parts</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_del">_del</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_head">_head</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_headreference">_headreference</a></span></span></li>
@@ -64,75 +59,73 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/parts/increasekey.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { tester } from &apos;../tester&apos; ;
-import { shuffle } from &apos;aureooms-js-random&apos; ;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import {shuffle} from &apos;@randomized/random&apos;;
+import {tester} from &apos;../tester.js&apos;;
 
-export function _increasekey ( _test, length, heapname, Heap, diffname, diff, n ) {
-
+export function _increasekey(
+	_test,
+	length,
+	heapname,
+	makeHeap,
+	diffname,
+	diff,
+	n,
+) {
 	const title = `Heap increasekey (${heapname}, ${diffname}, ${n})`;
 
-	_test( title, t =&gt; {
+	_test(title, (t) =&gt; {
+		const q = makeHeap(diff);
+		const pairs = [];
+		const b = [];
 
-		var q, a, reference, references, i, x, b;
+		if (length) t.deepEqual(q.length, 0, &apos;check length zero&apos;);
 
-		q = Heap( diff );
-		a = [];
-		b = [];
-		references = [];
-
-		if (length) t.deepEqual( q.length, 0, &quot;check length zero&quot; );
-
-		i = n;
-		while ( i-- ) {
-			x = Math.random();
-			reference = q.push( x );
-			references.push( reference );
-			a.push( x );
-			if (length) t.deepEqual( q.length, a.length );
+		let i = n;
+		while (i--) {
+			const x = Math.random();
+			const reference = q.push(x);
+			pairs.push({ref: reference, value: x});
+			if (length) t.deepEqual(q.length, pairs.length);
 		}
 
-		shuffle( references, 0, n );
+		shuffle(pairs, 0, n);
 
-		for ( i = 0 ; i &lt; n ; ++i ) {
+		const order = diffname === &apos;increasing&apos; ? 1 : -1;
 
-			a[i] += Math.random();
-			q.increasekey( references[i], a[i] );
-			if (length) t.deepEqual( q.length, n );
-
+		for (i = 0; i &lt; n; ++i) {
+			pairs[i].value += Math.random() * order;
+			q.increasekey(pairs[i].ref, pairs[i].value);
+			if (length) t.deepEqual(q.length, n);
 		}
 
 		i = n;
 
-		while ( i-- ) {
-
-			b.push( q.pop() );
-			if (length) t.deepEqual( q.length, i );
-
+		while (i--) {
+			b.push(q.pop());
+			if (length) t.deepEqual(q.length, i);
 		}
 
-		a.sort( diff );
-		b.sort( diff );
+		const a = pairs.map((x) =&gt; x.value);
+		a.sort(diff);
 
-		t.deepEqual( b, a, &quot;check identical&quot; );
+		t.deepEqual(b, a, &apos;check identical&apos;);
 
-		if (length) t.deepEqual( q.length, 0, &quot;check length zero&quot; );
+		if (length) t.deepEqual(q.length, 0, &apos;check length zero&apos;);
 
-		t.deepEqual( q.head(), undefined, &quot;check head empty&quot; );
-		t.deepEqual( q.headreference(), null, &quot;check headreference empty&quot; );
-		t.deepEqual( q.pop(), undefined, &quot;check pop empty&quot; );
-		t.deepEqual( q.popreference(), null, &quot;check popreference empty&quot; );
-
+		t.deepEqual(q.head(), undefined, &apos;check head empty&apos;);
+		t.deepEqual(q.headreference(), null, &apos;check headreference empty&apos;);
+		t.deepEqual(q.pop(), undefined, &apos;check pop empty&apos;);
+		t.deepEqual(q.popreference(), null, &apos;check popreference empty&apos;);
 	});
-
 }
 
-export const increasekey = tester( _increasekey ) ;
+export const increasekey = tester(_increasekey);
 </code></pre>
 
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>

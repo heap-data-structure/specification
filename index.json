@@ -1,0 +1,2182 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/adt/DummyHeap.js",
+    "content": "export function DummyHeap(compare) {\n\tthis.compare = function (a, b) {\n\t\treturn compare(a.value, b.value);\n\t};\n\n\tthis.array = [];\n\tthis.length = 0;\n}\n\nDummyHeap.Reference = function (value) {\n\tthis.value = value;\n};\n\nDummyHeap.prototype.head = function () {\n\tif (this.length === 0) return undefined;\n\n\treturn this.array[0].value;\n};\n\nDummyHeap.prototype.headreference = function () {\n\tif (this.length === 0) return null;\n\n\treturn this.array[0];\n};\n\nDummyHeap.prototype.pop = function () {\n\tif (this.length === 0) return undefined;\n\n\t--this.length;\n\treturn this.array.shift().value;\n};\n\nDummyHeap.prototype.popreference = function () {\n\tif (this.length === 0) return null;\n\n\t--this.length;\n\treturn this.array.shift();\n};\n\nDummyHeap.prototype.push = function (value) {\n\tconst reference = new DummyHeap.Reference(value);\n\n\tthis.pushreference(reference);\n\n\treturn reference;\n};\n\nDummyHeap.prototype.pushreference = function (reference) {\n\tthis.array.push(reference);\n\n\tthis.array.sort(this.compare);\n\n\t++this.length;\n};\n\nDummyHeap.prototype.merge = function (other) {\n\tthis.array = this.array.concat(other.array).sort(this.compare);\n\n\tthis.length += other.length;\n};\n\nDummyHeap.prototype.update = function (reference, value) {\n\treference.value = value;\n\n\tthis.array.sort(this.compare);\n};\n\nDummyHeap.prototype.decreasekey = DummyHeap.prototype.update;\n\nDummyHeap.prototype.increasekey = DummyHeap.prototype.update;\n\nDummyHeap.prototype.delete = function (reference) {\n\tthis.array.splice(this.array.indexOf(reference), 1);\n\t--this.length;\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/adt/DummyHeap.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "DummyHeap",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~DummyHeap",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": "{DummyHeap}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "compare",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 50,
+    "kind": "function",
+    "name": "Reference",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~Reference",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "head",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~head",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "function",
+    "name": "headreference",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~headreference",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "pop",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~pop",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "popreference",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~popreference",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "push",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~push",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "pushreference",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~pushreference",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "params": [
+      {
+        "name": "reference",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "merge",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~merge",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 56,
+    "undocument": true,
+    "params": [
+      {
+        "name": "other",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "update",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~update",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "params": [
+      {
+        "name": "reference",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "delete",
+    "memberof": "src/adt/DummyHeap.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeap.js~delete",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 72,
+    "undocument": true,
+    "params": [
+      {
+        "name": "reference",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/adt/DummyHeapWithoutReferences.js",
+    "content": "export function DummyHeapWithoutReferences(compare) {\n\tthis.compare = compare;\n\tthis.array = [];\n\tthis.length = 0;\n}\n\nDummyHeapWithoutReferences.prototype.head = function () {\n\tif (this.length === 0) return undefined;\n\n\treturn this.array[0];\n};\n\nDummyHeapWithoutReferences.prototype.pop = function () {\n\tif (this.length === 0) return undefined;\n\n\t--this.length;\n\treturn this.array.shift();\n};\n\nDummyHeapWithoutReferences.prototype.push = function (value) {\n\tthis.array.push(value);\n\n\tthis.array.sort(this.compare);\n\n\t++this.length;\n};\n\nDummyHeapWithoutReferences.prototype.merge = function (other) {\n\tthis.array = this.array.concat(other.array).sort(this.compare);\n\n\tthis.length += other.length;\n};\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/adt/DummyHeapWithoutReferences.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "DummyHeapWithoutReferences",
+    "memberof": "src/adt/DummyHeapWithoutReferences.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeapWithoutReferences.js~DummyHeapWithoutReferences",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeapWithoutReferences.js",
+    "importStyle": "{DummyHeapWithoutReferences}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "compare",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "head",
+    "memberof": "src/adt/DummyHeapWithoutReferences.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeapWithoutReferences.js~head",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeapWithoutReferences.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "pop",
+    "memberof": "src/adt/DummyHeapWithoutReferences.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeapWithoutReferences.js~pop",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeapWithoutReferences.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "push",
+    "memberof": "src/adt/DummyHeapWithoutReferences.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeapWithoutReferences.js~push",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeapWithoutReferences.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "merge",
+    "memberof": "src/adt/DummyHeapWithoutReferences.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/adt/DummyHeapWithoutReferences.js~merge",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/adt/DummyHeapWithoutReferences.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "params": [
+      {
+        "name": "other",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "file",
+    "name": "src/adt/index.js",
+    "content": "export * from './DummyHeap.js';\nexport * from './DummyHeapWithoutReferences.js';\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/adt/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "src/index.js",
+    "content": "export * from './adt/index.js';\nexport * from './parts/index.js';\nexport * from './test.js';\nexport * from './tester.js';\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "src/parts/decreasekey.js",
+    "content": "import {shuffle} from '@randomized/random';\nimport {tester} from '../tester.js';\n\nexport function _decreasekey(\n\t_test,\n\tlength,\n\theapname,\n\tmakeHeap,\n\tdiffname,\n\tdiff,\n\tn,\n) {\n\tconst title = `Heap decreasekey (${heapname}, ${diffname}, ${n})`;\n\n\t_test(title, (t) => {\n\t\tconst q = makeHeap(diff);\n\t\tconst pairs = [];\n\t\tconst b = [];\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tlet i = n;\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tconst reference = q.push(x);\n\t\t\tpairs.push({ref: reference, value: x});\n\t\t\tif (length) t.deepEqual(q.length, pairs.length);\n\t\t}\n\n\t\tshuffle(pairs, 0, n);\n\n\t\tconst order = diffname === 'increasing' ? 1 : -1;\n\n\t\tfor (i = 0; i < n; ++i) {\n\t\t\tpairs[i].value -= Math.random() * order;\n\t\t\tq.decreasekey(pairs[i].ref, pairs[i].value);\n\t\t\tif (length) t.deepEqual(q.length, n);\n\t\t}\n\n\t\ti = n;\n\n\t\twhile (i--) {\n\t\t\tb.push(q.pop());\n\t\t\tif (length) t.deepEqual(q.length, i);\n\t\t}\n\n\t\tconst a = pairs.map((x) => x.value);\n\t\ta.sort(diff);\n\n\t\tt.deepEqual(b, a, 'check identical');\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tt.deepEqual(q.head(), undefined, 'check head empty');\n\t\tt.deepEqual(q.headreference(), null, 'check headreference empty');\n\t\tt.deepEqual(q.pop(), undefined, 'check pop empty');\n\t\tt.deepEqual(q.popreference(), null, 'check popreference empty');\n\t});\n}\n\nexport const decreasekey = tester(_decreasekey);\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/decreasekey.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "function",
+    "name": "_decreasekey",
+    "memberof": "src/parts/decreasekey.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/parts/decreasekey.js~_decreasekey",
+    "access": "private",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/decreasekey.js",
+    "importStyle": "{_decreasekey}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heapname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "makeHeap",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diffname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diff",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 70,
+    "kind": "variable",
+    "name": "decreasekey",
+    "memberof": "src/parts/decreasekey.js",
+    "static": true,
+    "longname": "src/parts/decreasekey.js~decreasekey",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/decreasekey.js",
+    "importStyle": "{decreasekey}",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/parts/delete.js",
+    "content": "import {shuffle} from '@randomized/random';\nimport {tester} from '../tester.js';\n\nexport function _del(_test, length, heapname, makeHeap, diffname, diff, n) {\n\tconst title = `Heap delete (${heapname}, ${diffname}, ${n})`;\n\n\t_test(title, (t) => {\n\t\tconst q = makeHeap(diff);\n\t\tconst a = [];\n\t\tconst b = [];\n\t\tconst references = [];\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tlet i = n;\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tconst reference = q.push(x);\n\t\t\treferences.push(reference);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual(q.length, a.length);\n\t\t}\n\n\t\tshuffle(references, 0, n);\n\n\t\tfor (i = 0; i < n / 2; ++i) {\n\t\t\tb.push(references[i].value);\n\t\t\tq.delete(references[i]);\n\t\t\tif (length) t.deepEqual(q.length, a.length - b.length);\n\t\t}\n\n\t\tfor (; i < n; ++i) {\n\t\t\tb.push(q.pop());\n\t\t\tif (length) t.deepEqual(q.length, a.length - b.length);\n\t\t}\n\n\t\ta.sort(diff);\n\t\tb.sort(diff);\n\n\t\tt.deepEqual(b, a, 'check identical');\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tt.deepEqual(q.head(), undefined, 'check head empty');\n\t\tt.deepEqual(q.headreference(), null, 'check headreference empty');\n\t\tt.deepEqual(q.pop(), undefined, 'check pop empty');\n\t\tt.deepEqual(q.popreference(), null, 'check popreference empty');\n\t});\n}\n\nexport const del = tester(_del);\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/delete.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "_del",
+    "memberof": "src/parts/delete.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/parts/delete.js~_del",
+    "access": "private",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/delete.js",
+    "importStyle": "{_del}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heapname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "makeHeap",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diffname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diff",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 73,
+    "kind": "variable",
+    "name": "del",
+    "memberof": "src/parts/delete.js",
+    "static": true,
+    "longname": "src/parts/delete.js~del",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/delete.js",
+    "importStyle": "{del}",
+    "description": null,
+    "lineNumber": 51,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "src/parts/head.js",
+    "content": "import {tester} from '../tester.js';\n\nexport function _head(_test, length, heapname, makeHeap, diffname, diff, n) {\n\tconst title = `Heap head (${heapname}, ${diffname}, ${n})`;\n\n\t_test(title, (t) => {\n\t\tconst q = makeHeap(diff);\n\t\tconst a = [];\n\n\t\tlet i = n;\n\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\ti = n;\n\t\tconst b = [];\n\n\t\twhile (i--) {\n\t\t\tb.push(q.head());\n\t\t\tq.pop();\n\t\t}\n\n\t\tt.deepEqual(b, a, 'check head sorted');\n\t\tt.deepEqual(q.head(), undefined, 'check head empty');\n\t});\n}\n\nexport const head = tester(_head);\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/head.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 75,
+    "kind": "function",
+    "name": "_head",
+    "memberof": "src/parts/head.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/parts/head.js~_head",
+    "access": "private",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/head.js",
+    "importStyle": "{_head}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heapname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "makeHeap",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diffname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diff",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "head",
+    "memberof": "src/parts/head.js",
+    "static": true,
+    "longname": "src/parts/head.js~head",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/head.js",
+    "importStyle": "{head}",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "file",
+    "name": "src/parts/headreference.js",
+    "content": "import {tester} from '../tester.js';\n\nexport function _headreference(\n\t_test,\n\tlength,\n\theapname,\n\tmakeHeap,\n\tdiffname,\n\tdiff,\n\tn,\n) {\n\tconst title = `Heap headreference (${heapname}, ${diffname}, ${n})`;\n\n\t_test(title, (t) => {\n\t\tconst q = makeHeap(diff);\n\t\tconst a = [];\n\n\t\tlet i = n;\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t}\n\n\t\ti = n;\n\t\tconst b = [];\n\n\t\twhile (i--) {\n\t\t\tb.push(q.headreference().value);\n\t\t\tq.pop();\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\tt.deepEqual(b, a, 'check head reference sorted');\n\t\tt.deepEqual(q.headreference(), null, 'check head reference empty');\n\t});\n}\n\nexport const headreference = tester(_headreference);\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/headreference.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 78,
+    "kind": "function",
+    "name": "_headreference",
+    "memberof": "src/parts/headreference.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/parts/headreference.js~_headreference",
+    "access": "private",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/headreference.js",
+    "importStyle": "{_headreference}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heapname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "makeHeap",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diffname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diff",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 79,
+    "kind": "variable",
+    "name": "headreference",
+    "memberof": "src/parts/headreference.js",
+    "static": true,
+    "longname": "src/parts/headreference.js~headreference",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/headreference.js",
+    "importStyle": "{headreference}",
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "file",
+    "name": "src/parts/increasekey.js",
+    "content": "import {shuffle} from '@randomized/random';\nimport {tester} from '../tester.js';\n\nexport function _increasekey(\n\t_test,\n\tlength,\n\theapname,\n\tmakeHeap,\n\tdiffname,\n\tdiff,\n\tn,\n) {\n\tconst title = `Heap increasekey (${heapname}, ${diffname}, ${n})`;\n\n\t_test(title, (t) => {\n\t\tconst q = makeHeap(diff);\n\t\tconst pairs = [];\n\t\tconst b = [];\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tlet i = n;\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tconst reference = q.push(x);\n\t\t\tpairs.push({ref: reference, value: x});\n\t\t\tif (length) t.deepEqual(q.length, pairs.length);\n\t\t}\n\n\t\tshuffle(pairs, 0, n);\n\n\t\tconst order = diffname === 'increasing' ? 1 : -1;\n\n\t\tfor (i = 0; i < n; ++i) {\n\t\t\tpairs[i].value += Math.random() * order;\n\t\t\tq.increasekey(pairs[i].ref, pairs[i].value);\n\t\t\tif (length) t.deepEqual(q.length, n);\n\t\t}\n\n\t\ti = n;\n\n\t\twhile (i--) {\n\t\t\tb.push(q.pop());\n\t\t\tif (length) t.deepEqual(q.length, i);\n\t\t}\n\n\t\tconst a = pairs.map((x) => x.value);\n\t\ta.sort(diff);\n\n\t\tt.deepEqual(b, a, 'check identical');\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tt.deepEqual(q.head(), undefined, 'check head empty');\n\t\tt.deepEqual(q.headreference(), null, 'check headreference empty');\n\t\tt.deepEqual(q.pop(), undefined, 'check pop empty');\n\t\tt.deepEqual(q.popreference(), null, 'check popreference empty');\n\t});\n}\n\nexport const increasekey = tester(_increasekey);\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/increasekey.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 81,
+    "kind": "function",
+    "name": "_increasekey",
+    "memberof": "src/parts/increasekey.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/parts/increasekey.js~_increasekey",
+    "access": "private",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/increasekey.js",
+    "importStyle": "{_increasekey}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heapname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "makeHeap",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diffname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diff",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 82,
+    "kind": "variable",
+    "name": "increasekey",
+    "memberof": "src/parts/increasekey.js",
+    "static": true,
+    "longname": "src/parts/increasekey.js~increasekey",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/increasekey.js",
+    "importStyle": "{increasekey}",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "file",
+    "name": "src/parts/index.js",
+    "content": "export * from './decreasekey.js';\nexport * from './delete.js';\nexport * from './head.js';\nexport * from './headreference.js';\nexport * from './increasekey.js';\nexport * from './merge.js';\nexport * from './popreference.js';\nexport * from './pushpop.js';\nexport * from './pushreference.js';\nexport * from './update.js';\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 84,
+    "kind": "file",
+    "name": "src/parts/merge.js",
+    "content": "import {tester2} from '../tester.js';\n\nexport function _merge(\n\t_test,\n\tlength,\n\theapname,\n\tmakeHeap,\n\tdiffname,\n\tdiff,\n\tm,\n\tn,\n) {\n\tconst title = `Heap merge (${heapname}, ${diffname}, ${m}, ${n})`;\n\n\t_test(title, (t) => {\n\t\tconst a = [];\n\t\tconst q = makeHeap(diff);\n\t\tconst q1 = makeHeap(diff);\n\t\tconst q2 = makeHeap(diff);\n\n\t\tif (length) t.deepEqual(q1.length, 0, 'check length zero q1');\n\t\tif (length) t.deepEqual(q2.length, 0, 'check length zero q2');\n\n\t\tt.deepEqual(q.pop(), undefined, '1st empty pop');\n\n\t\tlet i = m;\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tq1.push(x);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual(q1.length, a.length);\n\t\t}\n\n\t\ti = n;\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tq2.push(x);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual(q2.length, a.length - m);\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\tq.merge(q1);\n\t\tq.merge(q2);\n\n\t\ti = m + n;\n\t\tconst b = [];\n\n\t\tif (length) t.deepEqual(q.length, i);\n\n\t\twhile (i--) {\n\t\t\tb.push(q.pop());\n\t\t\tif (length) t.deepEqual(q.length, i);\n\t\t}\n\n\t\tt.deepEqual(b, a, 'check sorted');\n\n\t\tt.deepEqual(q.pop(), undefined, '2nd empty pop');\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero q');\n\t});\n}\n\nexport const merge = tester2(_merge);\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/merge.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 85,
+    "kind": "function",
+    "name": "_merge",
+    "memberof": "src/parts/merge.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/parts/merge.js~_merge",
+    "access": "private",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/merge.js",
+    "importStyle": "{_merge}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heapname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "makeHeap",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diffname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diff",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "m",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 86,
+    "kind": "variable",
+    "name": "merge",
+    "memberof": "src/parts/merge.js",
+    "static": true,
+    "longname": "src/parts/merge.js~merge",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/merge.js",
+    "importStyle": "{merge}",
+    "description": null,
+    "lineNumber": 65,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "file",
+    "name": "src/parts/popreference.js",
+    "content": "import {tester} from '../tester.js';\n\nexport function _popreference(\n\t_test,\n\tlength,\n\theapname,\n\tmakeHeap,\n\tdiffname,\n\tdiff,\n\tn,\n) {\n\tconst title = `Heap popreference (${heapname}, ${diffname}, ${n})`;\n\n\t_test(title, (t) => {\n\t\tconst q = makeHeap(diff);\n\t\tconst a = [];\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tlet i = n;\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual(q.length, a.length);\n\t\t}\n\n\t\ti = n;\n\t\tconst b = [];\n\n\t\twhile (i--) {\n\t\t\tb.push(q.popreference().value);\n\t\t\tif (length) t.deepEqual(q.length, i);\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\tt.deepEqual(b, a, 'check sorted');\n\n\t\tt.deepEqual(q.popreference(), null, '2nd empty pop');\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\t});\n}\n\nexport const popreference = tester(_popreference);\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/popreference.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 88,
+    "kind": "function",
+    "name": "_popreference",
+    "memberof": "src/parts/popreference.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/parts/popreference.js~_popreference",
+    "access": "private",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/popreference.js",
+    "importStyle": "{_popreference}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heapname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "makeHeap",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diffname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diff",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 89,
+    "kind": "variable",
+    "name": "popreference",
+    "memberof": "src/parts/popreference.js",
+    "static": true,
+    "longname": "src/parts/popreference.js~popreference",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/popreference.js",
+    "importStyle": "{popreference}",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 90,
+    "kind": "file",
+    "name": "src/parts/pushpop.js",
+    "content": "import {tester} from '../tester.js';\n\nexport function _pushpop(_test, length, heapname, makeHeap, diffname, diff, n) {\n\tconst title = `Heap pushpop (${heapname}, ${diffname}, ${n})`;\n\n\t_test(title, (t) => {\n\t\tconst q = makeHeap(diff);\n\t\tconst a = [];\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tlet i = n;\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual(q.length, a.length);\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\ti = n;\n\t\tconst b = [];\n\n\t\twhile (i--) {\n\t\t\tb.push(q.pop());\n\t\t\tif (length) t.deepEqual(q.length, i);\n\t\t}\n\n\t\tt.deepEqual(b, a, 'check sorted');\n\n\t\tt.deepEqual(q.pop(), undefined, '2nd empty pop');\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\t});\n}\n\nexport const pushpop = tester(_pushpop);\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/pushpop.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 91,
+    "kind": "function",
+    "name": "_pushpop",
+    "memberof": "src/parts/pushpop.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/parts/pushpop.js~_pushpop",
+    "access": "private",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/pushpop.js",
+    "importStyle": "{_pushpop}",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heapname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "makeHeap",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diffname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diff",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 92,
+    "kind": "variable",
+    "name": "pushpop",
+    "memberof": "src/parts/pushpop.js",
+    "static": true,
+    "longname": "src/parts/pushpop.js~pushpop",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/pushpop.js",
+    "importStyle": "{pushpop}",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "file",
+    "name": "src/parts/pushreference.js",
+    "content": "import {shuffle} from '@randomized/random';\nimport {tester} from '../tester.js';\n\nexport function _pushreference(\n\t_test,\n\tlength,\n\theapname,\n\tmakeHeap,\n\tdiffname,\n\tdiff,\n\tn,\n) {\n\tconst title = `Heap pushreference (${heapname}, ${diffname}, ${n})`;\n\n\t_test(title, (t) => {\n\t\tconst q = makeHeap(diff);\n\t\tconst a = [];\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tlet i = n;\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tq.push(x);\n\t\t\ta.push(x);\n\t\t\tif (length) t.deepEqual(q.length, a.length);\n\t\t}\n\n\t\tconst b = [];\n\n\t\ti = n;\n\t\twhile (i--) {\n\t\t\tb.push(q.popreference());\n\t\t\tif (length) t.deepEqual(q.length, i);\n\t\t}\n\n\t\tshuffle(b, 0, n);\n\n\t\ti = n;\n\t\twhile (i--) {\n\t\t\tq.pushreference(b.pop());\n\t\t\tif (length) t.deepEqual(q.length, n - b.length);\n\t\t}\n\n\t\ti = n;\n\t\twhile (i--) {\n\t\t\tb.push(q.popreference().value);\n\t\t\tif (length) t.deepEqual(q.length, i);\n\t\t}\n\n\t\ta.sort(diff);\n\n\t\tt.deepEqual(b, a, 'check sorted');\n\n\t\tt.deepEqual(q.popreference(), null, '2nd empty pop');\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\t});\n}\n\nexport const pushreference = tester(_pushreference);\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/pushreference.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 94,
+    "kind": "function",
+    "name": "_pushreference",
+    "memberof": "src/parts/pushreference.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/parts/pushreference.js~_pushreference",
+    "access": "private",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/pushreference.js",
+    "importStyle": "{_pushreference}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heapname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "makeHeap",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diffname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diff",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 95,
+    "kind": "variable",
+    "name": "pushreference",
+    "memberof": "src/parts/pushreference.js",
+    "static": true,
+    "longname": "src/parts/pushreference.js~pushreference",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/pushreference.js",
+    "importStyle": "{pushreference}",
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "file",
+    "name": "src/parts/update.js",
+    "content": "import {shuffle} from '@randomized/random';\nimport {tester} from '../tester.js';\n\nexport function _update(_test, length, heapname, makeHeap, diffname, diff, n) {\n\tconst title = `Heap update (${heapname}, ${diffname}, ${n})`;\n\n\t_test(title, (t) => {\n\t\tconst q = makeHeap(diff);\n\t\tconst pairs = [];\n\t\tconst b = [];\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tlet i = n;\n\t\twhile (i--) {\n\t\t\tconst x = Math.random();\n\t\t\tconst reference = q.push(x);\n\t\t\tpairs.push({ref: reference, value: x});\n\t\t\tif (length) t.deepEqual(q.length, pairs.length);\n\t\t}\n\n\t\tshuffle(pairs, 0, n);\n\n\t\tfor (i = 0; i < n; ++i) {\n\t\t\tpairs[i].value += Math.random() - 0.5;\n\t\t\tq.update(pairs[i].ref, pairs[i].value);\n\t\t\tif (length) t.deepEqual(q.length, n);\n\n\t\t\t// Not a typo\n\t\t\tq.update(pairs[i].ref, pairs[i].value);\n\t\t\tif (length) t.deepEqual(q.length, n);\n\t\t}\n\n\t\ti = n;\n\n\t\twhile (i--) {\n\t\t\tb.push(q.pop());\n\t\t\tif (length) t.deepEqual(q.length, i);\n\t\t}\n\n\t\tconst a = pairs.map((x) => x.value);\n\t\ta.sort(diff);\n\n\t\tt.deepEqual(b, a, 'check identical');\n\n\t\tif (length) t.deepEqual(q.length, 0, 'check length zero');\n\n\t\tt.deepEqual(q.head(), undefined, 'check head empty');\n\t\tt.deepEqual(q.headreference(), null, 'check headreference empty');\n\t\tt.deepEqual(q.pop(), undefined, 'check pop empty');\n\t\tt.deepEqual(q.popreference(), null, 'check popreference empty');\n\t});\n}\n\nexport const update = tester(_update);\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/parts/update.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 97,
+    "kind": "function",
+    "name": "_update",
+    "memberof": "src/parts/update.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/parts/update.js~_update",
+    "access": "private",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/update.js",
+    "importStyle": "{_update}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "length",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heapname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "makeHeap",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diffname",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "diff",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "n",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 98,
+    "kind": "variable",
+    "name": "update",
+    "memberof": "src/parts/update.js",
+    "static": true,
+    "longname": "src/parts/update.js~update",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/parts/update.js",
+    "importStyle": "{update}",
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/test.js",
+    "content": "import {\n\thead,\n\tpushpop,\n\tmerge,\n\tupdate,\n\tdecreasekey,\n\tincreasekey,\n\tdel,\n\theadreference,\n\tpopreference,\n\tpushreference,\n} from './parts/index.js';\n\nexport function test(\n\t_test,\n\theaps,\n\t{references, length, lengths, lengths1, lengths2} = {\n\t\treferences: true,\n\t\tlength: false,\n\t},\n) {\n\thead(_test, length, heaps, lengths);\n\tpushpop(_test, length, heaps, lengths);\n\tmerge(_test, length, heaps, lengths1 || lengths, lengths2);\n\n\tif (!references) return;\n\n\tupdate(_test, length, heaps, lengths);\n\tdecreasekey(_test, length, heaps, lengths);\n\tincreasekey(_test, length, heaps, lengths);\n\tdel(_test, length, heaps, lengths);\n\theadreference(_test, length, heaps, lengths);\n\tpopreference(_test, length, heaps, lengths);\n\tpushreference(_test, length, heaps, lengths);\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/test.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "function",
+    "name": "test",
+    "memberof": "src/test.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/test.js~test",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/test.js",
+    "importStyle": "{test}",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "_test",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "heaps",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "objectPattern2",
+        "optional": true,
+        "types": [
+          "{\"references\": boolean, \"length\": boolean, \"lengths\": *, \"lengths1\": *, \"lengths2\": *}"
+        ],
+        "defaultRaw": {
+          "references": true,
+          "length": false
+        },
+        "defaultValue": "{\"references\":true,\"length\":false}"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/tester.js",
+    "content": "import {increasing, decreasing} from '@total-order/primitive';\nimport {map} from '@iterable-iterator/map';\nimport {_chain as chain} from '@iterable-iterator/chain';\nimport {list} from '@iterable-iterator/list';\nimport {exhaust} from '@iterable-iterator/consume';\nimport {product} from '@set-theory/cartesian-product';\nimport {\n\tchain as fchain,\n\tpartial,\n\tstar,\n} from '@functional-abstraction/functools';\n\nconst DEFAULT_LENGTHS = [\n\t[0],\n\t[1],\n\t[16],\n\t[17],\n\t[31],\n\t[32],\n\t[33],\n\t[63],\n\t[64],\n\t[65],\n];\n\nexport function tester(method) {\n\treturn function (_test, length, heaps, lengths) {\n\t\tif (lengths === undefined) lengths = DEFAULT_LENGTHS;\n\n\t\texhaust(\n\t\t\tmap(\n\t\t\t\tfchain([chain, list, partial(star, [method])]),\n\t\t\t\tproduct(\n\t\t\t\t\t[\n\t\t\t\t\t\t[[_test, length]],\n\n\t\t\t\t\t\theaps,\n\n\t\t\t\t\t\t[\n\t\t\t\t\t\t\t['increasing', increasing],\n\t\t\t\t\t\t\t['decreasing', decreasing],\n\t\t\t\t\t\t],\n\n\t\t\t\t\t\tlengths,\n\t\t\t\t\t],\n\t\t\t\t\t1,\n\t\t\t\t),\n\t\t\t),\n\t\t);\n\t};\n}\n\nexport function tester2(method) {\n\treturn function (_test, length, heaps, lengths1, lengths2) {\n\t\tif (lengths1 === undefined) lengths1 = DEFAULT_LENGTHS;\n\t\tif (lengths2 === undefined) lengths2 = lengths1;\n\n\t\texhaust(\n\t\t\tmap(\n\t\t\t\tfchain([chain, list, partial(star, [method])]),\n\t\t\t\tproduct(\n\t\t\t\t\t[\n\t\t\t\t\t\t[[_test, length]],\n\n\t\t\t\t\t\theaps,\n\n\t\t\t\t\t\t[\n\t\t\t\t\t\t\t['increasing', increasing],\n\t\t\t\t\t\t\t['decreasing', decreasing],\n\t\t\t\t\t\t],\n\n\t\t\t\t\t\tlengths1,\n\t\t\t\t\t\tlengths2,\n\t\t\t\t\t],\n\t\t\t\t\t1,\n\t\t\t\t),\n\t\t\t),\n\t\t);\n\t};\n}\n",
+    "static": true,
+    "longname": "/home/runner/work/specification/specification/src/tester.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "variable",
+    "name": "DEFAULT_LENGTHS",
+    "memberof": "src/tester.js",
+    "static": true,
+    "longname": "src/tester.js~DEFAULT_LENGTHS",
+    "access": "public",
+    "export": false,
+    "importPath": "@heap-data-structure/specification/src/tester.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "function",
+    "name": "tester",
+    "memberof": "src/tester.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/tester.js~tester",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/tester.js",
+    "importStyle": "{tester}",
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "params": [
+      {
+        "name": "method",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 104,
+    "kind": "function",
+    "name": "tester2",
+    "memberof": "src/tester.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/tester.js~tester2",
+    "access": "public",
+    "export": true,
+    "importPath": "@heap-data-structure/specification/src/tester.js",
+    "importStyle": "{tester2}",
+    "description": null,
+    "lineNumber": 53,
+    "undocument": true,
+    "params": [
+      {
+        "name": "method",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": ":mount_fuji: [@heap-data-structure/specification](https://heap-data-structure.github.io/specification)\n==\n\nHeap specification library for JavaScript.\nSee [docs](https://heap-data-structure.github.io/specification).\nParent is [@heap-data-structure](https://github.com/heap-data-structure/about).\n\n```js\n// eslint-disable-next-line ava/use-test\nimport ava from 'ava' ;\nimport * as spec from '@heap-data-structure/specification' ;\n\nspec.test(\n  ava ,\n  [\n    [\n      \"DummyHeap\" , // Name for the implementation\n      compare => new spec.DummyHeap(compare) // Return an empty heap using `compare` to order priorities\n    ]\n  ] ,\n  {\n    references : true , // Do the implementations maintain references?\n    length : true , // Do the implementations maintain a `length` property?\n    lengths : [[0], [1], [16], [17], [31], [32], [33], [63], [64], [65]] ,\n    lengths1 : [[0], [1], [16], [17], [31], [32], [33], [63], [64], [65]] , // for merge/meld test\n    lengths2 : [[0], [1], [16], [17], [31], [32], [33], [63], [64], [65]] ,  // for merge/meld test\n  }\n) ;\n```\n\n[![License](https://img.shields.io/github/license/heap-data-structure/specification.svg)](https://raw.githubusercontent.com/heap-data-structure/specification/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@heap-data-structure/specification.svg)](https://www.npmjs.org/package/@heap-data-structure/specification)\n[![Tests](https://img.shields.io/github/workflow/status/heap-data-structure/specification/ci:test?event=push&label=tests)](https://github.com/heap-data-structure/specification/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/david/heap-data-structure/specification.svg)](https://david-dm.org/heap-data-structure/specification)\n[![Dev dependencies](https://img.shields.io/david/dev/heap-data-structure/specification.svg)](https://david-dm.org/heap-data-structure/specification?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/heap-data-structure/specification.svg)](https://github.com/heap-data-structure/specification/issues)\n[![Downloads](https://img.shields.io/npm/dm/@heap-data-structure/specification.svg)](https://www.npmjs.org/package/@heap-data-structure/specification)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/heap-data-structure/specification.svg)](https://codeclimate.com/github/heap-data-structure/specification/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/heap-data-structure/specification.svg)](https://codeclimate.com/github/heap-data-structure/specification/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/heap-data-structure/specification/main.svg)](https://codecov.io/gh/heap-data-structure/specification)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/heap-data-structure/specification.svg)](https://codeclimate.com/github/heap-data-structure/specification/trends/technical_debt)\n[![Documentation](https://heap-data-structure.github.io/specification/badge.svg)](https://heap-data-structure.github.io/specification/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@heap-data-structure/specification)](https://bundlephobia.com/result?p=@heap-data-structure/specification)\n\n## Description\n\nThis package contains a specification test suite for heap implementations such\nas\n[@heap-data-structure/d-ary-heap](https://github.com/heap-data-structure/d-ary-heap),\n[@heap-data-structure/pairing-heap](https://github.com/heap-data-structure/pairing-heap),\n[@heap-data-structure/binomial-heap](https://github.com/heap-data-structure/binomial-heap),\nand\n[@heap-data-structure/fibonacci-heap](https://github.com/heap-data-structure/fibonacci-heap).\n\n## :scroll: Binary and binomial heap reference\n\n  - http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf\n  - http://stackoverflow.com/questions/6531543/efficient-implementation-of-binary-heaps\n",
+    "longname": "/home/runner/work/specification/specification/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"@heap-data-structure/specification\",\n  \"description\": \"Heap specification code bricks for JavaScript\",\n  \"version\": \"16.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://heap-data-structure.github.io/specification\",\n  \"repository\": {\n    \"url\": \"https://github.com/heap-data-structure/specification\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/heap-data-structure/specification/issues\"\n  },\n  \"keywords\": [\n    \"bricks\",\n    \"ender\",\n    \"heap\",\n    \"javascript\",\n    \"js\",\n    \"spec\"\n  ],\n  \"sideEffects\": false,\n  \"type\": \"module\",\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.cjs\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.cjs\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:build\": \"npm run build\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {\n    \"@functional-abstraction/functools\": \"^3.0.2\",\n    \"@iterable-iterator/chain\": \"^2.0.1\",\n    \"@iterable-iterator/consume\": \"^1.0.1\",\n    \"@iterable-iterator/list\": \"^1.0.1\",\n    \"@iterable-iterator/map\": \"^1.0.1\",\n    \"@randomized/random\": \"^4.0.0\",\n    \"@set-theory/cartesian-product\": \"^2.0.1\",\n    \"@total-order/primitive\": \"^1.0.1\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"7.13.10\",\n    \"@babel/polyfill\": \"7.12.1\",\n    \"@babel/preset-env\": \"7.13.10\",\n    \"@babel/register\": \"7.13.8\",\n    \"@commitlint/cli\": \"13.1.0\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.3\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"1.0.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"7.0.1\",\n    \"lint-staged\": \"11.1.1\",\n    \"microbundle\": \"0.13.1\",\n    \"np\": \"7.4.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.42.0\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\",\n      \"camelcase\": \"off\",\n      \"unicorn/prevent-abbreviations\": \"off\",\n      \"no-constant-condition\": \"off\",\n      \"unicorn/prefer-math-trunc\": \"off\",\n      \"unicorn/no-new-array\": \"off\",\n      \"no-negated-condition\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/specification/specification/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manualIndex",
+    "globalIndex": false,
+    "content": null,
+    "longname": "",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/specification/specification/doc/manual/overview.md",
+    "name": "./doc/manual/overview.md",
+    "content": "# Overview\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/specification/specification/doc/manual/installation.md",
+    "name": "./doc/manual/installation.md",
+    "content": "# Installation\n\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@heap-data-structure/specification\n```\n\n### npm\n```terminal\nnpm install @heap-data-structure/specification --save\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/specification/specification/doc/manual/usage.md",
+    "name": "./doc/manual/usage.md",
+    "content": "# Usage\n\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nawait import( 'regenerator-runtime/runtime.js' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen\n```js\nconst spec = await import( '@heap-data-structure/specification' ) ;\n// or\nimport * as spec from '@heap-data-structure/specification' ;\n```\n",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "manual",
+    "longname": "/home/runner/work/specification/specification/doc/manual/example.md",
+    "name": "./doc/manual/example.md",
+    "content": "# Examples\n",
+    "static": true,
+    "access": "public"
+  }
+]

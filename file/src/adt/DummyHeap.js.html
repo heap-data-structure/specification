@@ -3,16 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/adt/DummyHeap.js | aureooms/js-heap-spec API Document</title>
+  <title data-ice="title">src/adt/DummyHeap.js | @heap-data-structure/specification</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
-  
-  
   <script src="script/manual.js"></script>
-<script data-ice="userScript" src="user/script/0-header.js"></script>
-<link data-ice="userStyle" rel="stylesheet" href="user/css/0-style.css">
-</head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Heap specification code bricks for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@heap-data-structure/specification"><meta property="twitter:description" content="Heap specification code bricks for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -20,8 +16,7 @@
   <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
   <a href="identifiers.html">Reference</a>
   <a href="source.html">Source</a>
-  <a href="test.html" data-ice="testLink">Test</a>
-  <a data-ice="repoURL" href="https://github.com/aureooms/js-heap-spec.git" class="repo-url-github">Repository</a>
+  
   <div class="search-box">
   <span>
     <img src="./image/search.png">
@@ -29,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-</header>
+<a style="position:relative; top:3px;" href="https://github.com/heap-data-structure/specification"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -37,9 +32,9 @@
   <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-test">test</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester">tester</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tester2">tester2</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">adt</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#adt">adt</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeap">DummyHeap</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-DummyHeapWithoutReferences">DummyHeapWithoutReferences</a></span></span></li>
-<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">parts</div><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#parts">parts</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_decreasekey">_decreasekey</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_del">_del</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_head">_head</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_headreference">_headreference</a></span></span></li>
@@ -64,111 +59,87 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/adt/DummyHeap.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">export function DummyHeap(compare) {
+	this.compare = function (a, b) {
+		return compare(a.value, b.value);
+	};
 
-export function DummyHeap ( compare ) {
-
-	this.compare = function ( a , b ) { return compare( a.value , b.value ) ; } ;
-	this.array = [ ] ;
-	this.length = 0 ;
-
+	this.array = [];
+	this.length = 0;
 }
 
-DummyHeap.Reference = function ( value ) { this.value = value ; } ;
+DummyHeap.Reference = function (value) {
+	this.value = value;
+};
 
 DummyHeap.prototype.head = function () {
-
-	if ( this.length === 0 ) return undefined;
+	if (this.length === 0) return undefined;
 
 	return this.array[0].value;
-
 };
-
 
 DummyHeap.prototype.headreference = function () {
-
-	if ( this.length === 0 ) return null;
+	if (this.length === 0) return null;
 
 	return this.array[0];
-
 };
-
 
 DummyHeap.prototype.pop = function () {
+	if (this.length === 0) return undefined;
 
-	if ( this.length === 0 ) return undefined;
-
-	--this.length ;
-	return this.array.shift( ).value ;
-
+	--this.length;
+	return this.array.shift().value;
 };
-
 
 DummyHeap.prototype.popreference = function () {
+	if (this.length === 0) return null;
 
-	if ( this.length === 0 ) return null ;
-
-	--this.length ;
-	return this.array.shift( ) ;
-
+	--this.length;
+	return this.array.shift();
 };
 
+DummyHeap.prototype.push = function (value) {
+	const reference = new DummyHeap.Reference(value);
 
-DummyHeap.prototype.push = function ( value ) {
+	this.pushreference(reference);
 
-	var reference = new DummyHeap.Reference( value ) ;
-
-	this.pushreference( reference ) ;
-
-	return reference ;
-
+	return reference;
 };
 
+DummyHeap.prototype.pushreference = function (reference) {
+	this.array.push(reference);
 
-DummyHeap.prototype.pushreference = function ( reference ) {
-
-	this.array.push( reference ) ;
-
-	this.array.sort( this.compare ) ;
+	this.array.sort(this.compare);
 
 	++this.length;
-
 };
 
-
-DummyHeap.prototype.merge = function ( other ) {
-
-	this.array = this.array.concat( other.array ).sort( this.compare ) ;
+DummyHeap.prototype.merge = function (other) {
+	this.array = this.array.concat(other.array).sort(this.compare);
 
 	this.length += other.length;
-
-} ;
-
-
-DummyHeap.prototype.update = function ( reference, value ) {
-
-	reference.value = value ;
-
-	this.array.sort( this.compare ) ;
-
 };
 
-DummyHeap.prototype.decreasekey = DummyHeap.prototype.update ;
+DummyHeap.prototype.update = function (reference, value) {
+	reference.value = value;
 
-DummyHeap.prototype.increasekey = DummyHeap.prototype.update ;
+	this.array.sort(this.compare);
+};
 
-DummyHeap.prototype.delete = function ( reference ) {
+DummyHeap.prototype.decreasekey = DummyHeap.prototype.update;
 
-	this.array.splice( this.array.indexOf( reference ) , 1 ) ;
-	--this.length ;
+DummyHeap.prototype.increasekey = DummyHeap.prototype.update;
 
+DummyHeap.prototype.delete = function (reference) {
+	this.array.splice(this.array.indexOf(reference), 1);
+	--this.length;
 };
 </code></pre>
 
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
 </footer>
 
 <script src="script/search_index.js"></script>
