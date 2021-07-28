@@ -2,7 +2,74 @@
   "name": "@heap-data-structure/specification",
   "description": "Heap specification code bricks for JavaScript",
   "version": "15.0.3",
+  "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
+  "homepage": "https://heap-data-structure.github.io/specification",
+  "repository": {
+    "url": "https://github.com/heap-data-structure/specification",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/heap-data-structure/specification/issues"
+  },
+  "keywords": [
+    "bricks",
+    "ender",
+    "heap",
+    "javascript",
+    "js",
+    "spec"
+  ],
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel --delete-dir-on-start --env-name production src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
+    "esdoc": "esdoc",
+    "lint": "true",
+    "lint-config": "fixpack --dryRun",
+    "lint-config-and-fix": "fixpack || fixpack",
+    "prepare": "npm run build",
+    "release": "np",
+    "test": "ava",
+    "travis": "npm run lint && npm run cover"
+  },
+  "dependencies": {
+    "@functional-abstraction/functools": "^3.0.2",
+    "@iterable-iterator/chain": "^2.0.1",
+    "@iterable-iterator/consume": "^1.0.1",
+    "@iterable-iterator/list": "^1.0.1",
+    "@iterable-iterator/map": "^1.0.1",
+    "@randomized/random": "^4.0.0",
+    "@set-theory/cartesian-product": "^2.0.1",
+    "@total-order/primitive": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.13.10",
+    "@babel/core": "7.13.10",
+    "@babel/polyfill": "7.12.1",
+    "@babel/preset-env": "7.13.10",
+    "@babel/register": "7.13.8",
+    "ava": "3.15.0",
+    "babel-plugin-transform-remove-console": "6.9.4",
+    "babel-plugin-unassert": "3.0.1",
+    "babel-preset-power-assert": "3.0.0",
+    "coveralls": "3.1.0",
+    "esdoc": "1.1.0",
+    "esdoc-ecmascript-proposal-plugin": "1.0.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "fixpack": "4.0.0",
+    "np": "7.4.0",
+    "nyc": "15.1.0",
+    "power-assert": "1.6.1",
+    "regenerator-runtime": "0.13.7"
+  },
   "ava": {
     "files": [
       "test/src/**/*"
@@ -72,72 +139,5 @@
         "sourceMaps": "inline"
       }
     }
-  },
-  "bugs": {
-    "url": "https://github.com/heap-data-structure/specification/issues"
-  },
-  "dependencies": {
-    "@functional-abstraction/functools": "^3.0.2",
-    "@iterable-iterator/chain": "^2.0.1",
-    "@iterable-iterator/consume": "^1.0.1",
-    "@iterable-iterator/list": "^1.0.1",
-    "@iterable-iterator/map": "^1.0.1",
-    "@randomized/random": "^4.0.0",
-    "@set-theory/cartesian-product": "^2.0.1",
-    "@total-order/primitive": "^1.0.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "7.13.10",
-    "@babel/core": "7.13.10",
-    "@babel/polyfill": "7.12.1",
-    "@babel/preset-env": "7.13.10",
-    "@babel/register": "7.13.8",
-    "ava": "3.15.0",
-    "babel-plugin-transform-remove-console": "6.9.4",
-    "babel-plugin-unassert": "3.0.1",
-    "babel-preset-power-assert": "3.0.0",
-    "coveralls": "3.1.0",
-    "esdoc": "1.1.0",
-    "esdoc-ecmascript-proposal-plugin": "1.0.0",
-    "esdoc-inject-script-plugin": "1.0.0",
-    "esdoc-inject-style-plugin": "1.0.0",
-    "esdoc-standard-plugin": "1.0.0",
-    "np": "7.4.0",
-    "nyc": "15.1.0",
-    "power-assert": "1.6.1",
-    "regenerator-runtime": "0.13.7",
-    "fixpack": "4.0.0"
-  },
-  "files": [
-    "lib"
-  ],
-  "homepage": "https://heap-data-structure.github.io/specification",
-  "keywords": [
-    "bricks",
-    "ender",
-    "heap",
-    "javascript",
-    "js",
-    "spec"
-  ],
-  "license": "AGPL-3.0",
-  "main": "lib/index.js",
-  "repository": {
-    "url": "https://github.com/heap-data-structure/specification",
-    "type": "git"
-  },
-  "scripts": {
-    "build": "babel --delete-dir-on-start --env-name production src -d lib",
-    "cover": "nyc --reporter=lcov npm test",
-    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
-    "esdoc": "esdoc",
-    "lint": "true",
-    "prepare": "npm run build",
-    "release": "np",
-    "test": "ava",
-    "travis": "npm run lint && npm run cover",
-    "lint-config-and-fix": "fixpack || fixpack",
-    "lint-config": "fixpack --dryRun"
-  },
-  "sideEffects": false
+  }
 }
