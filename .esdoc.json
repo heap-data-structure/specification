@@ -17,7 +17,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "heap-data-structure/specification"
+          "title": "@heap-data-structure/specification"
         },
         "test": {
           "type": "ava",
