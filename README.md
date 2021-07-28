@@ -43,7 +43,7 @@ spec.test(
 [![Documentation](https://heap-data-structure.github.io/specification/badge.svg)](https://heap-data-structure.github.io/specification/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@heap-data-structure/specification)](https://bundlephobia.com/result?p=@heap-data-structure/specification)
 
-## Description
+## :newspaper: Description
 
 This package contains a specification test suite for heap implementations such
 as
@@ -53,7 +53,7 @@ as
 and
 [@heap-data-structure/fibonacci-heap](https://github.com/heap-data-structure/fibonacci-heap).
 
-## :scroll: Binary and binomial heap reference
+## :scroll: Reference
 
-  - http://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf
-  - http://stackoverflow.com/questions/6531543/efficient-implementation-of-binary-heaps
+  - [Binomial heap](https://www.cs.princeton.edu/~wayne/cs423/lectures/heaps-4up.pdf)
+  - [Binary heap](https://stackoverflow.com/questions/6531543/efficient-implementation-of-binary-heaps)
