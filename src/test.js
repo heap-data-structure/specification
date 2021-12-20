@@ -11,14 +11,13 @@ import {
 	pushreference,
 } from './parts/index.js';
 
-export function test(
-	_test,
-	heaps,
-	{references, length, lengths, lengths1, lengths2} = {
+export function test(_test, heaps, options) {
+	const {references, length, lengths, lengths1, lengths2} = {
 		references: true,
 		length: false,
-	},
-) {
+		...options,
+	};
+
 	head(_test, length, heaps, lengths);
 	pushpop(_test, length, heaps, lengths);
 	merge(_test, length, heaps, lengths1 || lengths, lengths2);

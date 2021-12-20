@@ -69,7 +69,7 @@
     "@iterable-iterator/list": "^1.0.1",
     "@iterable-iterator/map": "^1.0.1",
     "@randomized/random": "^4.0.0",
-    "@set-theory/cartesian-product": "^2.0.1",
+    "@set-theory/cartesian-product": "^2.0.2",
     "@total-order/primitive": "^1.0.1"
   },
   "devDependencies": {
@@ -97,7 +97,7 @@
     "pinst": "2.1.6",
     "power-assert": "1.6.1",
     "regenerator-runtime": "0.13.9",
-    "xo": "0.43.0"
+    "xo": "0.47.0"
   },
   "ava": {
     "files": [
