@@ -1,6 +1,6 @@
 {
   "coverage": "0%",
-  "expectCount": 40,
+  "expectCount": 39,
   "actualCount": 0,
   "files": {
     "src/adt/DummyHeap.js": {
@@ -109,13 +109,6 @@
       "undocumentLines": [
         4,
         55
-      ]
-    },
-    "src/test.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        14
       ]
     },
     "src/tester.js": {

@@ -126,12 +126,6 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
-    "@heap-data-structure/specification/src/test.js~test",
-    "function/index.html#static-function-test",
-    "<span>test</span> <span class=\"search-result-import-path\">@heap-data-structure/specification/src/test.js</span>",
-    "function"
-  ],
-  [
     "@heap-data-structure/specification/src/tester.js~tester2",
     "function/index.html#static-function-tester2",
     "<span>tester2</span> <span class=\"search-result-import-path\">@heap-data-structure/specification/src/tester.js</span>",
@@ -519,12 +513,6 @@ window.esdocSearchIndex = [
     "src/parts/update.js",
     "file/src/parts/update.js.html",
     "src/parts/update.js",
-    "file"
-  ],
-  [
-    "src/test.js",
-    "file/src/test.js.html",
-    "src/test.js",
     "file"
   ],
   [
