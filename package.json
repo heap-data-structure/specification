@@ -73,7 +73,7 @@
     "@total-order/primitive": "^1.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.16.10",
+    "@babel/core": "7.16.12",
     "@babel/polyfill": "7.12.1",
     "@babel/preset-env": "7.16.11",
     "@babel/register": "7.16.9",
