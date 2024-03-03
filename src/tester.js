@@ -1,14 +1,14 @@
-import {increasing, decreasing} from '@total-order/primitive';
-import {map} from '@iterable-iterator/map';
-import {_chain as chain} from '@iterable-iterator/chain';
-import {list} from '@iterable-iterator/list';
-import {exhaust} from '@iterable-iterator/consume';
-import {product} from '@set-theory/cartesian-product';
 import {
 	chain as fchain,
 	partial,
 	star,
 } from '@functional-abstraction/functools';
+import {_chain as chain} from '@iterable-iterator/chain';
+import {exhaust} from '@iterable-iterator/consume';
+import {list} from '@iterable-iterator/list';
+import {map} from '@iterable-iterator/map';
+import {product} from '@set-theory/cartesian-product';
+import {increasing, decreasing} from '@total-order/primitive';
 
 const DEFAULT_LENGTHS = [
 	[0],
