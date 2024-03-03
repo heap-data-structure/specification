@@ -3,7 +3,7 @@ import ava from 'ava';
 
 import {partial, create} from '@functional-abstraction/functools';
 
-import * as spec from '../../src/index.js';
+import * as spec from '#module';
 
 spec.test(ava, [['DummyHeap', partial(create, [spec.DummyHeap])]], {
 	references: true,
